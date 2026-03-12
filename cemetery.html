@@ -1104,7 +1104,7 @@ Figure 5.25: Plotting multiple dates.
 </div>
 <div id="visual-inspection-of-calibrated-14c-determinations." class="section level4 hasAnchor" number="5.4.5.2">
 <h4><span class="header-section-number">5.4.5.2</span> Visual inspection of calibrated <span class="math inline">\(^{14}C\)</span> determinations.<a href="cemetery.html#visual-inspection-of-calibrated-14c-determinations." class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<p>As Bayliss and colleagues <span class="citation">(2007, 8–9)</span> discuss in detail, visual inspection of assemblages of radiocarbon dates almost inevitably leads to overestimation of the spans of time that produced those assemblages. If we take the maximum and minimum of the 95% HDRs, we get 685 - 1220. A similar but less precise estimate - the one most archaeologists would probably give - based on visual inspection of the calibrated ranges would likely be something like, “about 850 CE to a bit after 1200 CE”.</p>
+<p>As Bayliss and colleagues <span class="citation">(2007, 8–9)</span> discuss in detail, visual inspection of assemblages of radiocarbon dates almost inevitably leads to overestimation of the spans of time that produced those assemblages. If we take the maximum and minimum of the 95% HDRs, we get 693 - 1265. A similar but less precise estimate - the one most archaeologists would probably give - based on visual inspection of the calibrated ranges would likely be something like, “about 850 CE to a bit after 1200 CE”.</p>
 <p><span style="color: red;">But in fact our simulated <span class="math inline">\(^{14}C\)</span> ages are from samples drawn from a uniform distribution covering the interval <strong>800 - 1100 CE</strong>.</span></p>
 <div class="figure"><span style="display:block;" id="fig:unnamed-chunk-37"></span>
 <img src="radiocarbon_workshop_files/figure-html/unnamed-chunk-37-1.png" alt="Calendar dates and simulated radiocarbon dates." width="672" />
@@ -1235,10 +1235,25 @@ Figure 5.28: KDE and boundaries.
 <p>If you look at the results of the ‘Interval’ query in the ‘Table’ window, you’ll find that the 95% confidence interval is 113-381 years, with a median of 276 years. That is a corollary of the boundaries, and the phase model’s answer to our question of how long the cemetery was in use. It varies quite a bit for two reasons: we don’t have a huge number of samples, and we have no information with which to constrain the initial and terminal dates (no dated events that predate and postdate cemetery use). If we could add those, our estimate would get more precise.</p>
 <p>How good are our results? Well, if we take the medians of the boundaries (not ideal for describing the bimodal distribution of the end boundary, but efficient), we’d say that our phase began around 900 CE and lasted until about 1180 CE. The end might come with a caveat: there’s a good chance that it’s about 90 years earlier; we can tell from the KDE that really there are only one or two dates that are pushing our end date forward. Knowing as we do that our initial dated events were sampled from a uniform distribution extending from 800-1100 CE, we can tell that we are victims of some bad luck in our sampling. We haven’t sampled any early burials, and we got one late date that seems to be the result of a radiocarbon age intersecting a wide calibrated range (see Figure 5.26; these are likely LabXX-02 and LabXX-04). The problem, of course, that if we weren’t working from simulated data, we’d have no way to know that our results were inaccurate - a good illustration of the kinds of uncertainties that are difficult to escape in any chronological model.</p>
 <p>####Simulating radiocarbon samples in OxCal</p>
-<p>If you want to explore these uncertainties further, you can re-run this example with different simulated dates. The <code>R_Simulate</code> command in OxCal randomly generates a radiocarbon age that <em>might result</em> from a given calendar age.</p>
-<div id="example-code" class="section level7" number="5.4.5.3.0.0.1">
-<p class="heading"><span class="header-section-number">5.4.5.3.0.0.1</span> example code</p>
-</div>
+<p>If you want to explore these uncertainties further, you can re-run this example with different simulated dates. The <code>R_Simulate</code> command in OxCal randomly generates a radiocarbon age that <em>might result</em> from a given calendar age. You can use ‘Insert’–&gt;‘R_Simulate’ or edit code directly to produce generate multiple radiocarbon dates from the same calendar date, for example.</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode js"><code class="sourceCode javascript"><span id="cb6-1"><a href="cemetery.html#cb6-1" tabindex="-1"></a> <span class="fu">Plot</span>()</span>
+<span id="cb6-2"><a href="cemetery.html#cb6-2" tabindex="-1"></a> {</span>
+<span id="cb6-3"><a href="cemetery.html#cb6-3" tabindex="-1"></a>  <span class="fu">Curve</span>(<span class="st">&quot;SHCal20&quot;</span><span class="op">,</span><span class="st">&quot;shcal20.14c&quot;</span>)<span class="op">;</span></span>
+<span id="cb6-4"><a href="cemetery.html#cb6-4" tabindex="-1"></a>  <span class="fu">C_Date</span>(<span class="st">&quot;Date of death&quot;</span><span class="op">,</span> <span class="dv">1074</span><span class="op">,</span> <span class="dv">1</span>)<span class="op">;</span></span>
+<span id="cb6-5"><a href="cemetery.html#cb6-5" tabindex="-1"></a>  <span class="fu">R_Simulate</span>(<span class="st">&quot;Sim1&quot;</span><span class="op">,</span> <span class="dv">1074</span><span class="op">,</span> <span class="dv">25</span>)<span class="op">;</span></span>
+<span id="cb6-6"><a href="cemetery.html#cb6-6" tabindex="-1"></a>  <span class="fu">R_Simulate</span>(<span class="st">&quot;Sim2&quot;</span><span class="op">,</span> <span class="dv">1074</span><span class="op">,</span> <span class="dv">25</span>)<span class="op">;</span></span>
+<span id="cb6-7"><a href="cemetery.html#cb6-7" tabindex="-1"></a>  <span class="fu">R_Simulate</span>(<span class="st">&quot;Sim3&quot;</span><span class="op">,</span> <span class="dv">1074</span><span class="op">,</span> <span class="dv">25</span>)<span class="op">;</span></span>
+<span id="cb6-8"><a href="cemetery.html#cb6-8" tabindex="-1"></a> }<span class="op">;</span></span></code></pre></div>
+<script>
+ Plot()
+ {
+  Curve("SHCal20","shcal20.14c");
+  C_Date("Date of death", 1074, 1);
+  R_Simulate("Sim1", 1074, 25);
+  R_Simulate("Sim2", 1074, 25);
+  R_Simulate("Sim3", 1074, 25);
+ };
+</script>
 </div>
 </div>
 <div id="introducing-real-world-complications" class="section level3 hasAnchor" number="5.4.6">
@@ -1250,7 +1265,7 @@ Figure 5.28: KDE and boundaries.
 <div id="old-wood" class="section level4 hasAnchor" number="5.4.6.1">
 <h4><span class="header-section-number">5.4.6.1</span> old wood<a href="cemetery.html#old-wood" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>Trees are often long-lived organisms whose growth occurs in discrete (often but not necessarily annual) increments - tree rings. Their tissue incorporates atmospheric carbon through photosynthesis across the entire lifespan of the tree; each ring is in equilibrium with atmospheric carbon at the time that it is formed. In consequence, interior rings will have a radiocarbon age (and in fact a calendar age) greater than that of exterior rings. In the case of wood recovered in archaeological context (<em>e.g.</em>, timber in construction), the date of interest is usually the moment of harvest. Unless the outermost rings (or small twigs) are sampled, however, there is a risk that the estimated age may be much older - as much as centuries older, in the case of long-lived species. In Figure 5.29, a sample from rings laid down around 570 CE would (and should!) have a very different radiocarbon age than a sample from rings laid down around 1492 CE.</p>
-<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-42"></span>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-43"></span>
 <img src="imgs/bigbasin_redwood.png" alt="Cross-section of a California redwood (*Sequoia sempervirens*) that sprouted in 544 CE and fell in 1936 CE. A 1cm$^{3}$ wood sample from near the center of the trunk would - accurately - produce a radiocarbon age &gt;1000 years older than one near the bark." width="100%" style="padding:10px" />
 <p class="caption">
 Figure 5.29: Cross-section of a California redwood (<em>Sequoia sempervirens</em>) that sprouted in 544 CE and fell in 1936 CE. A 1cm<span class="math inline">\(^{3}\)</span> wood sample from near the center of the trunk would - accurately - produce a radiocarbon age &gt;1000 years older than one near the bark.
@@ -1264,33 +1279,33 @@ Figure 5.29: Cross-section of a California redwood (<em>Sequoia sempervirens</em
 <div id="marine-reservoir" class="section level4 hasAnchor" number="5.4.6.3">
 <h4><span class="header-section-number">5.4.6.3</span> marine reservoir<a href="cemetery.html#marine-reservoir" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>Note that the illustration of the carbon cycle (Figure 5.5) includes exchange between ocean and atmosphere. This exchange, because oceans constitute a much greater proportion of the southern hemisphere than the northern, is a contributor to the <a href="cemetery.html#curves">contrast in atmospheric <span class="math inline">\(^{14}C\)</span> between hemispheres</a>. The amount of ocean-atmosphere exchange is significant because the oceans (and other bodies of water, though we won’t cover freshwater here) contain “old” carbon, which is to say carbon &gt;55kya, with no <span class="math inline">\(^{14}C\)</span> remaining. Globally, surface water in the oceans is ~400 radiocarbon years older than the atmosphere; where upwelling introduces deeper water and correspondingly more old carbon, the offset can be greater. The age of marine carbon can have both direct and indirect impacts on radiocarbon ages of archaeological materials. Organisms that derive some or all of the carbon in their tissues from marine rather than atmospheric sources will be incorporating carbon with greater apparent age. If the offset between marine carbon and atmospheric carbon at the time and place of tissue formation were known, it would be straightforward to calculate the calendar age of a sample even if its carbon were marine in origin. Complications arise because the offset between marine and atmospheric carbon is variable in space and time, and because organisms may incorporate carbon from a mixture of different reservoirs. Ideally this is managed by establishing the local offset from the global marine average (the Marine20 calibration curve <span class="citation">(Heaton et al. 2020)</span>) for the period of interest. Establishing that globally, even for recent times, is complicated by post-1945 atomic testing. A regularly updated database of radiocarbon measuremnts on pre-bomb marine samples of known age <span class="citation">(Reimer and Reimer 2001)</span> is available at <a href="http://calib.org/marine/">calib.org</a>. It is, however, sparse for many regions globally, including coastal Peru (Figure 5.30). It alo consists primarily of early <span class="math inline">\(20^{th}\)</span>-century materials, meaning that it cannot account for past variations in <span class="math inline">\(\Delta{R}\)</span>. Since <span class="math inline">\(\Delta{R}\)</span> is sensitive to strength of upwelling, past variation is to be expected, particularly given the effects of ENSO on upwelling off the coast of western South America <span class="citation">(Jones et al. 2010)</span>.</p>
-<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-43"></span>
-<img src="radiocarbon_workshop_files/figure-html/unnamed-chunk-43-1.png" alt="Data in calib.org/marine for coastal Peru, as of 08/2024." width="672" />
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-44"></span>
+<img src="radiocarbon_workshop_files/figure-html/unnamed-chunk-44-1.png" alt="Data in calib.org/marine for coastal Peru, as of 08/2024." width="672" />
 <p class="caption">
 Figure 5.30: Data in calib.org/marine for coastal Peru, as of 08/2024.
 </p>
 </div>
 <p>The preferred solution for archaeological questions is to date paired marine and terrestrial samples from the region and time period of interest - that is, from the same context and believed to be of the same age - in order to directly establish the relevant <span class="math inline">\(\Delta{R}\)</span>. While this should improve age estimates, however, the multiple uncertainties involved in such a project are likely to make dating samples with marine reservoir offsets useful only if the underlying chronological questions do not require high precision. Bayliss and Marshall <span class="citation">(2022, 40)</span> go so far as to drily advise that, “the best policy for dealing with samples that exhibit reservoir effects is avoidance”.</p>
-<p><img src="radiocarbon_workshop_files/figure-html/unnamed-chunk-44-1.png" width="672" /><img src="radiocarbon_workshop_files/figure-html/unnamed-chunk-44-2.png" width="672" /></p>
+<p><img src="radiocarbon_workshop_files/figure-html/unnamed-chunk-45-1.png" width="672" /><img src="radiocarbon_workshop_files/figure-html/unnamed-chunk-45-2.png" width="672" /></p>
 <pre><code>## [1] 21.0 48.9</code></pre>
 <div id="diet" class="section level5 hasAnchor" number="5.4.6.3.1">
 <h5><span class="header-section-number">5.4.6.3.1</span> dietary offsets<a href="cemetery.html#diet" class="anchor-section" aria-label="Anchor link to header"></a></h5>
 <p>Marine reservoir effects impact more than just marine organisms. Animals - including humans - derive the carbon used to build tissue from the the organisms that they consume (similarly, marine and aquatic plants, if even partially submerged, are likely to derive at least some of their carbon from non-atmospheric reservoirs). Animals that consume marine organisms thus derive some of their carbon from marine reservoirs. If 50% of their diet is marine, then 50% of their carbon will be marine, and the appropriate calibration curve would be a 50/50 mix of atmospheric (IntCal20 or SHCal20) and marine (Marine20, adjusted for local <span class="math inline">\(\Delta{R}\)</span>). Estimating the dietary inputs of the organism from which a dated sample is derived can thus be a key consideration. This is most commonly an issue for dates on human tissue in coastal settings. In such cases either greater uncertainty has to be built into the age estimate, or some approximation of the relative contribution of different reservoirs established. The latter generally is derived from measurements of stable carbon and nitrogen isotopes <span class="citation">(Richards 2020)</span>, which in combination are used to estimate long-term sources of dietary protein (Figure 5.31) using mixing models (e.g., the <em>R</em> packages <strong>simmr</strong> <span class="citation">(Govan and Parnell 2024)</span> and <strong>MixSIAR</strong> <span class="citation">(Stock et al. 2018)</span>).</p>
-<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-45"></span>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-46"></span>
 <img src="imgs/dietary_estimation.png" alt="Proportion of diet derived from marine sources can be estimated using C and N isotopes." width="100%" style="padding:10px" />
 <p class="caption">
 Figure 5.31: Proportion of diet derived from marine sources can be estimated using C and N isotopes.
 </p>
 </div>
 <p>Because these estimates come with their own uncertainties - a typical output of a mixing model is an estimate of % marine contribution to diet something like “42 ±25” - they tend to produce age estimates that, while more accurate than those calculated with the wrong curve, are less precise. Consider, for example, the first of the simulated dates that we have used above (LabXX-01): for a calendar age of 1074 CE we generated a simulated <span class="math inline">\(^{14}C\)</span> age of 925 ±28 using a southern hemisphere reservoir, which we calibrated with SHCal20 to produce a 95% HDR of 1052 - 1269 CE (Figure 5.32).</p>
-<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-46"></span>
-<img src="radiocarbon_workshop_files/figure-html/unnamed-chunk-46-1.png" alt="Calendar age of 1074 CE, simulated $^{14}C$ age of 925 ±28, calibrated with SHCal20." width="672" />
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-47"></span>
+<img src="radiocarbon_workshop_files/figure-html/unnamed-chunk-47-1.png" alt="Calendar age of 1074 CE, simulated $^{14}C$ age of 925 ±28, calibrated with SHCal20." width="672" />
 <p class="caption">
 Figure 5.32: Calendar age of 1074 CE, simulated <span class="math inline">\(^{14}C\)</span> age of 925 ±28, calibrated with SHCal20.
 </p>
 </div>
 <p>What if we instead consider sample LabXX-01 to be a sample of human bone, from an individual whose diet was 50% marine, who died in 1074 CE?</p>
-<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-47"></span>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-48"></span>
 <img src="imgs/oxcal/simdates_marinesim.png" alt="Effects of 50% marine diet on a calibrated age estimate." width="100%" style="padding:10px" />
 <p class="caption">
 Figure 5.33: Effects of 50% marine diet on a calibrated age estimate.
@@ -1302,7 +1317,7 @@ Figure 5.33: Effects of 50% marine diet on a calibrated age estimate.
 <li>We don’t know anything about this individual’s diet, but consider it <em>likely</em> that they had a significant marine dietary component, and realize that our calibration should account for this. We know the local <span class="math inline">\(\Delta{R}\)</span> is -200 ±75 years, and can thus model the effects of a diet that might range anywhere from 0 - 100% marine. (Figure 5.34, 01b)</li>
 <li>Based on the C/N isotopic composition of the sampled bone and the application of a mixing model, we are able to estimate that their diet was 50 ±20% marine, and we know the local <span class="math inline">\(\Delta{R}\)</span> is -200 ±75 years. (Figure 5.34, 01c)</li>
 </ul>
-<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-48"></span>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-49"></span>
 <img src="imgs/oxcal/simdates_marinesim_calib.png" alt="Effects of different assumptions about a 50% marine diet on a calibrated age estimate." width="100%" style="padding:10px" />
 <p class="caption">
 Figure 5.34: Effects of different assumptions about a 50% marine diet on a calibrated age estimate.
@@ -1388,7 +1403,7 @@ Figure 5.34: Effects of different assumptions about a 50% marine diet on a calib
 <p>A radiocarbon date will give an average of the dates on which the growth rings that constitute the sample were formed. If an exterior ring is dated and the trunk or branch was harvested while living, this will be the date of harvest. If interior rings are sampled and/or the wood was already dead when harvested and/or the wood was used for some span of time post-harvest but pre-carbonization and/or the burn event predated the burial event, the dated event may be as much as centuries before interment.</p>
 </details>
 <p>Understanding what the dated event is and assessing how it related to the target event is fundamental to accurate age estimates. If the difference between dated event and target event is known or can be estimated, then a radiocarbon determination can still produce a useful age estimate. If the difference between the two is unknown, then the radiocarbon determination can only provide an uncertain age estimate, one that accounts for the greatest possible offset between dated event and target event. Suppose for example that the burial described above turns out to also contain a wooden figurine (Figure 5.35). In order to accurately estimate the moment of deposition from a radiocarbon age estimate of that wood, we would need to estimate 1) the age of the wood when harvested (i.e., which part of the tree was used, and how old that wood might have been), 2) the amount of time that passed between the death of the tree (if it preceded harvest), harvest of the wood, and the carving of the object, and 3) the amount of time elapsed between carving of the figurine and its deposition in the burial. This is asking a lot - but if we <em>could</em> estimate those, we could adjust the radiocarbon age by applying an estimated offset, and come up with an estimated date of deposition. As with dietary offsets for bone samples, applying an age offset is likely to incorporate additional uncertainty, and consequently reduce the precision of our age estimate.</p>
-<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-49"></span>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-50"></span>
 <img src="imgs/brokenear.png" alt="Wooden figurine." width="206" style="float:right; padding:10px" />
 <p class="caption">
 Figure 5.35: Wooden figurine.
@@ -1404,7 +1419,7 @@ Figure 5.35: Wooden figurine.
 <p>To illustrate this Bayesian modeling approach, let’s examine a new set of simulated data, focusing on 12 simulated dates from materials from Burial 11/92 and the question of trying to estimate the date of interment.</p>
 <table class=" lightable-classic" style="font-family: Cambria; width: auto !important; margin-left: auto; margin-right: auto;">
 <caption>
-<span id="tab:unnamed-chunk-50">Table 5.1: </span>Radiocarbon dates from Burial 11/92
+<span id="tab:unnamed-chunk-51">Table 5.1: </span>Radiocarbon dates from Burial 11/92
 </caption>
 <thead>
 <tr>
@@ -1437,7 +1452,7 @@ LabXX-101
 gourd
 </td>
 <td style="text-align:right;">
-1040
+1008
 </td>
 <td style="text-align:right;">
 30
@@ -1454,7 +1469,7 @@ LabXX-102
 textile
 </td>
 <td style="text-align:right;">
-1068
+968
 </td>
 <td style="text-align:right;">
 37
@@ -1471,7 +1486,7 @@ LabXX-103
 wood
 </td>
 <td style="text-align:right;">
-1064
+1118
 </td>
 <td style="text-align:right;">
 35
@@ -1488,7 +1503,7 @@ LabXX-104
 human bone
 </td>
 <td style="text-align:right;">
-990
+1040
 </td>
 <td style="text-align:right;">
 34
@@ -1505,7 +1520,7 @@ LabXX-105
 human bone
 </td>
 <td style="text-align:right;">
-1077
+1025
 </td>
 <td style="text-align:right;">
 32
@@ -1522,7 +1537,7 @@ LabXX-106
 human bone
 </td>
 <td style="text-align:right;">
-998
+1045
 </td>
 <td style="text-align:right;">
 35
@@ -1539,7 +1554,7 @@ LabXX-107
 camelid bone
 </td>
 <td style="text-align:right;">
-1046
+1013
 </td>
 <td style="text-align:right;">
 26
@@ -1556,7 +1571,7 @@ LabXX-108
 cane
 </td>
 <td style="text-align:right;">
-1074
+1102
 </td>
 <td style="text-align:right;">
 31
@@ -1573,7 +1588,7 @@ LabXX-109
 cane
 </td>
 <td style="text-align:right;">
-1053
+1066
 </td>
 <td style="text-align:right;">
 29
@@ -1590,7 +1605,7 @@ LabXX-110
 charcoal
 </td>
 <td style="text-align:right;">
-1179
+1209
 </td>
 <td style="text-align:right;">
 40
@@ -1607,7 +1622,7 @@ LabXX-111
 charcoal
 </td>
 <td style="text-align:right;">
-1141
+1113
 </td>
 <td style="text-align:right;">
 39
@@ -1624,7 +1639,7 @@ LabXX-112
 charcoal
 </td>
 <td style="text-align:right;">
-1119
+1059
 </td>
 <td style="text-align:right;">
 32
@@ -1640,23 +1655,23 @@ charcoal
 ##   Boundary(&quot;&quot;);
 ##   Phase(&quot;11/92&quot;)
 ##   {
-##    R_Date(&quot;LabXX-101&quot;, 1040, 30);
-##    R_Date(&quot;LabXX-102&quot;, 1068, 37);
-##    R_Date(&quot;LabXX-103&quot;, 1064, 35);
-##    R_Date(&quot;LabXX-104&quot;, 990, 34);
-##    R_Date(&quot;LabXX-105&quot;, 1077, 32);
-##    R_Date(&quot;LabXX-106&quot;, 998, 35);
-##    R_Date(&quot;LabXX-107&quot;, 1046, 26);
-##    R_Date(&quot;LabXX-108&quot;, 1074, 31);
-##    R_Date(&quot;LabXX-109&quot;, 1053, 29);
-##    R_Date(&quot;LabXX-110&quot;, 1179, 40);
-##    R_Date(&quot;LabXX-111&quot;, 1141, 39);
-##    R_Date(&quot;LabXX-112&quot;, 1119, 32);
+##    R_Date(&quot;LabXX-101&quot;, 1008, 30);
+##    R_Date(&quot;LabXX-102&quot;, 968, 37);
+##    R_Date(&quot;LabXX-103&quot;, 1118, 35);
+##    R_Date(&quot;LabXX-104&quot;, 1040, 34);
+##    R_Date(&quot;LabXX-105&quot;, 1025, 32);
+##    R_Date(&quot;LabXX-106&quot;, 1045, 35);
+##    R_Date(&quot;LabXX-107&quot;, 1013, 26);
+##    R_Date(&quot;LabXX-108&quot;, 1102, 31);
+##    R_Date(&quot;LabXX-109&quot;, 1066, 29);
+##    R_Date(&quot;LabXX-110&quot;, 1209, 40);
+##    R_Date(&quot;LabXX-111&quot;, 1113, 39);
+##    R_Date(&quot;LabXX-112&quot;, 1059, 32);
 ##   };
 ##   Boundary(&quot;&quot;);
 ##  };</code></pre>
 <p>With results that look like those in Figure 5.36 (‘View’ –&gt; ‘Plot dates’)… <!-- problem of set.seed() not working here; results discussed below will change --></p>
-<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-52"></span>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-53"></span>
 <img src="imgs/oxcal/sim_example_burial1192.png" alt="Bounded phase model for $^{14}C$ dates from Burial 11/92." width="340" />
 <p class="caption">
 Figure 5.36: Bounded phase model for <span class="math inline">\(^{14}C\)</span> dates from Burial 11/92.
@@ -1676,7 +1691,7 @@ Figure 5.36: Bounded phase model for <span class="math inline">\(^{14}C\)</span>
 <p>The identification of samples that are affected by offsets is generally more difficult than the identification of misfits, since offsets are often of a scale small enough that age estimates will not be obviously inaccurate. Their identification is further complicated by the fact that we must also consider <em>outliers</em>: since we are producing age estimates based on probabilities, we should expect that some samples will not match our expectations. If we are describing a calibrated radiocarbon age using a 95% HDR, there is a 5% chance - 1 in 20 - that the calendar age of the sample is in fact <em>outside</em> of the range we specify. For details of how these cases can be handled in OxCal, see Bronk Ramsey’s <span class="citation">(2009)</span> discussion (confusingly, OxCal uses the same term (“outlier”) to refer to outliers, offsets, and misfits).</p>
 <p>In our example case, let’s suppose that we have C/N results from the human bone samples that rule out the possibility of a marine dietary component (admittedly unlikely, near the coast, but we have enough complications already, without adding that one). With that in mind, let’s re-examine Table 5.1 and Figure 5.36. For which samples - based on the materials dated - should we <em>expect</em> a close match between dated event and the moment of burial? For which should we expect offsets, and of what scale?</p>
 <p>‘Tools’–&gt;‘Models’–&gt;‘Outlier Model’, and under ‘Prototype’, select “Charcoal”. This will populate the other fields, and when you click ‘Ok’, will add a line to your model that describes a Charcoal Outlier Model, which we can then invoke for any particular sample. To do that, select the sample, then ‘Insert’–&gt;‘Other’–&gt;‘Outlier’, and specify “Charcoal” as the model and “1” as the probability. That will tell the model that we <em>expect</em> the sample to be older than the target event. We’re not sure by how much, but The model that we’ve specified</p>
-<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-53"></span>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-54"></span>
 <img src="imgs/oxcal/outlier_model.png" alt="Adding an Outlier Model." width="377" style="float:right; padding:10px" />
 <p class="caption">
 Figure 5.37: Adding an Outlier Model.
@@ -1684,7 +1699,7 @@ Figure 5.37: Adding an Outlier Model.
 </div>
 <p>You can also of course do this by editing the OxCal code directly, but watch out for <code>{}</code> and <code>;</code>, which are easy to drop, and without which your code will fail.</p>
 <p>Applying a charcoal model to all samples for which it’s appropriate and re-running the model will <em>very</em> likely produce a model with a higher ‘A’ index, because we have told the model to <em>expect</em> those samples to be too old, and to adjust the posterior estimates accordingly. Since we don’t know the exact magnitude of the offset, and since it will vary from one sample to the next, the model will calculate which offsets are both consistent with the outlier model that we’ve specified and with other parameters, and adjust the probability density function for each date accordingly. If you plot the results and make sure that “Color outliers’ is selected under ‘Edit’–&gt;‘Format’, you should see results something like Figure 5.38, and an ‘A’ index closer to 120 than to 60.</p>
-<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-54"></span>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-55"></span>
 <img src="imgs/oxcal/outlier_model.png" alt="Results of applying an Outlier Model." width="377" style="padding:10px" />
 <p class="caption">
 Figure 5.38: Results of applying an Outlier Model.
@@ -1693,38 +1708,38 @@ Figure 5.38: Results of applying an Outlier Model.
 <p>Here we have enacted modeling as an iterative process - building a model demonstrated that we needed to apply chronometric hygiene (we had implicitly accepted all of our samples as dating the target event), and applying chronometric hygiene enabled us to rebuild and rerun the model. This process - making our assumptions explicit, examining their implications, and reconsidering our assumptions - is an applicaiton of Bayesian modeling that Bayliss <span class="citation">(Bayliss et al. 2007, 4)</span> argues is the operationalization of Hodder’s <span class="citation">(1995)</span> hermeneutic spiral.</p>
 <p>If we are confident that our samples date the same event, we can use OxCal’s ‘Combine’ function, which calculates what range of time is consistent with all samples, and tests how likely the samples are to be of the same age (i.e., performs a Ward &amp; Wilson test to determine whether the samples are consistent with our assertion that they have the same radiocarbon content). This provides another means of estimating the date of burial, and because the constraints are stronger (the asserted prior is that samples are of the same age, rather than that they come from a coherent distribution), the estimate is likely to be more precise. That precision depends very directly on our prior belief that these samples date the same event, however; it would be a mistake to accept the results unless we are prepared to defend that asserted prior.</p>
 <p>To experiment with ‘Combine’, remove the ‘Sequence’, ‘Phase’, and ‘Boundary’ parameters, and wrap all the samples that you believe to be dating the same event in a ‘Combine’ command. Your code should look something like this, depending on how many dates you include and which you model as outliers (actual dates will vary because they are randomly generated in the simulation process).</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode js"><code class="sourceCode javascript"><span id="cb8-1"><a href="cemetery.html#cb8-1" tabindex="-1"></a> <span class="fu">Plot</span>()</span>
-<span id="cb8-2"><a href="cemetery.html#cb8-2" tabindex="-1"></a> {</span>
-<span id="cb8-3"><a href="cemetery.html#cb8-3" tabindex="-1"></a>  <span class="fu">Outlier_Model</span>(<span class="st">&quot;Charcoal&quot;</span><span class="op">,</span><span class="fu">Exp</span>(<span class="dv">1</span><span class="op">,-</span><span class="dv">10</span><span class="op">,</span><span class="dv">0</span>)<span class="op">,</span><span class="fu">U</span>(<span class="dv">0</span><span class="op">,</span><span class="dv">3</span>)<span class="op">,</span><span class="st">&quot;t&quot;</span>)<span class="op">;</span></span>
-<span id="cb8-4"><a href="cemetery.html#cb8-4" tabindex="-1"></a>  <span class="fu">Curve</span>(<span class="st">&quot;SHCal20&quot;</span><span class="op">,</span><span class="st">&quot;shcal20.14c&quot;</span>)<span class="op">;</span></span>
-<span id="cb8-5"><a href="cemetery.html#cb8-5" tabindex="-1"></a>  <span class="fu">Combine</span>(<span class="st">&quot;Burial 11/92&quot;</span>)</span>
-<span id="cb8-6"><a href="cemetery.html#cb8-6" tabindex="-1"></a>  {</span>
-<span id="cb8-7"><a href="cemetery.html#cb8-7" tabindex="-1"></a>   <span class="fu">R_Date</span>(<span class="st">&quot;LabXX-101&quot;</span><span class="op">,</span> <span class="dv">1033</span><span class="op">,</span> <span class="dv">30</span>)<span class="op">;</span></span>
-<span id="cb8-8"><a href="cemetery.html#cb8-8" tabindex="-1"></a>   <span class="fu">R_Date</span>(<span class="st">&quot;LabXX-102&quot;</span><span class="op">,</span> <span class="dv">1090</span><span class="op">,</span> <span class="dv">37</span>)<span class="op">;</span></span>
-<span id="cb8-9"><a href="cemetery.html#cb8-9" tabindex="-1"></a>   <span class="fu">R_Date</span>(<span class="st">&quot;LabXX-103&quot;</span><span class="op">,</span> <span class="dv">1130</span><span class="op">,</span> <span class="dv">35</span>)</span>
-<span id="cb8-10"><a href="cemetery.html#cb8-10" tabindex="-1"></a>   {</span>
-<span id="cb8-11"><a href="cemetery.html#cb8-11" tabindex="-1"></a>    <span class="fu">Outlier</span>(<span class="st">&quot;Charcoal&quot;</span><span class="op">,</span><span class="dv">1</span>)<span class="op">;</span></span>
-<span id="cb8-12"><a href="cemetery.html#cb8-12" tabindex="-1"></a>   }<span class="op">;</span></span>
-<span id="cb8-13"><a href="cemetery.html#cb8-13" tabindex="-1"></a>   <span class="fu">R_Date</span>(<span class="st">&quot;LabXX-104&quot;</span><span class="op">,</span> <span class="dv">990</span><span class="op">,</span> <span class="dv">34</span>)<span class="op">;</span></span>
-<span id="cb8-14"><a href="cemetery.html#cb8-14" tabindex="-1"></a>   <span class="fu">R_Date</span>(<span class="st">&quot;LabXX-105&quot;</span><span class="op">,</span> <span class="dv">1087</span><span class="op">,</span> <span class="dv">32</span>)<span class="op">;</span></span>
-<span id="cb8-15"><a href="cemetery.html#cb8-15" tabindex="-1"></a>   <span class="fu">R_Date</span>(<span class="st">&quot;LabXX-106&quot;</span><span class="op">,</span> <span class="dv">1080</span><span class="op">,</span> <span class="dv">35</span>)<span class="op">;</span></span>
-<span id="cb8-16"><a href="cemetery.html#cb8-16" tabindex="-1"></a>   <span class="fu">R_Date</span>(<span class="st">&quot;LabXX-107&quot;</span><span class="op">,</span> <span class="dv">1075</span><span class="op">,</span> <span class="dv">26</span>)<span class="op">;</span></span>
-<span id="cb8-17"><a href="cemetery.html#cb8-17" tabindex="-1"></a>   <span class="fu">R_Date</span>(<span class="st">&quot;LabXX-108&quot;</span><span class="op">,</span> <span class="dv">1049</span><span class="op">,</span> <span class="dv">31</span>)<span class="op">;</span></span>
-<span id="cb8-18"><a href="cemetery.html#cb8-18" tabindex="-1"></a>   <span class="fu">R_Date</span>(<span class="st">&quot;LabXX-109&quot;</span><span class="op">,</span> <span class="dv">1081</span><span class="op">,</span> <span class="dv">29</span>)<span class="op">;</span></span>
-<span id="cb8-19"><a href="cemetery.html#cb8-19" tabindex="-1"></a>   <span class="fu">R_Date</span>(<span class="st">&quot;LabXX-110&quot;</span><span class="op">,</span> <span class="dv">1277</span><span class="op">,</span> <span class="dv">40</span>)</span>
-<span id="cb8-20"><a href="cemetery.html#cb8-20" tabindex="-1"></a>   {</span>
-<span id="cb8-21"><a href="cemetery.html#cb8-21" tabindex="-1"></a>    <span class="fu">Outlier</span>(<span class="st">&quot;Charcoal&quot;</span><span class="op">,</span><span class="dv">1</span>)<span class="op">;</span></span>
-<span id="cb8-22"><a href="cemetery.html#cb8-22" tabindex="-1"></a>   }<span class="op">;</span></span>
-<span id="cb8-23"><a href="cemetery.html#cb8-23" tabindex="-1"></a>   <span class="fu">R_Date</span>(<span class="st">&quot;LabXX-111&quot;</span><span class="op">,</span> <span class="dv">1104</span><span class="op">,</span> <span class="dv">39</span>)</span>
-<span id="cb8-24"><a href="cemetery.html#cb8-24" tabindex="-1"></a>   {</span>
-<span id="cb8-25"><a href="cemetery.html#cb8-25" tabindex="-1"></a>    <span class="fu">Outlier</span>(<span class="st">&quot;Charcoal&quot;</span><span class="op">,</span><span class="dv">1</span>)<span class="op">;</span></span>
-<span id="cb8-26"><a href="cemetery.html#cb8-26" tabindex="-1"></a>   }<span class="op">;</span></span>
-<span id="cb8-27"><a href="cemetery.html#cb8-27" tabindex="-1"></a>   <span class="fu">R_Date</span>(<span class="st">&quot;LabXX-112&quot;</span><span class="op">,</span> <span class="dv">1147</span><span class="op">,</span> <span class="dv">32</span>)</span>
-<span id="cb8-28"><a href="cemetery.html#cb8-28" tabindex="-1"></a>   {</span>
-<span id="cb8-29"><a href="cemetery.html#cb8-29" tabindex="-1"></a>    <span class="fu">Outlier</span>(<span class="st">&quot;Charcoal&quot;</span><span class="op">,</span><span class="dv">1</span>)<span class="op">;</span></span>
-<span id="cb8-30"><a href="cemetery.html#cb8-30" tabindex="-1"></a>   }<span class="op">;</span></span>
-<span id="cb8-31"><a href="cemetery.html#cb8-31" tabindex="-1"></a>  }<span class="op">;</span></span>
-<span id="cb8-32"><a href="cemetery.html#cb8-32" tabindex="-1"></a> }<span class="op">;</span></span></code></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode js"><code class="sourceCode javascript"><span id="cb9-1"><a href="cemetery.html#cb9-1" tabindex="-1"></a> <span class="fu">Plot</span>()</span>
+<span id="cb9-2"><a href="cemetery.html#cb9-2" tabindex="-1"></a> {</span>
+<span id="cb9-3"><a href="cemetery.html#cb9-3" tabindex="-1"></a>  <span class="fu">Outlier_Model</span>(<span class="st">&quot;Charcoal&quot;</span><span class="op">,</span><span class="fu">Exp</span>(<span class="dv">1</span><span class="op">,-</span><span class="dv">10</span><span class="op">,</span><span class="dv">0</span>)<span class="op">,</span><span class="fu">U</span>(<span class="dv">0</span><span class="op">,</span><span class="dv">3</span>)<span class="op">,</span><span class="st">&quot;t&quot;</span>)<span class="op">;</span></span>
+<span id="cb9-4"><a href="cemetery.html#cb9-4" tabindex="-1"></a>  <span class="fu">Curve</span>(<span class="st">&quot;SHCal20&quot;</span><span class="op">,</span><span class="st">&quot;shcal20.14c&quot;</span>)<span class="op">;</span></span>
+<span id="cb9-5"><a href="cemetery.html#cb9-5" tabindex="-1"></a>  <span class="fu">Combine</span>(<span class="st">&quot;Burial 11/92&quot;</span>)</span>
+<span id="cb9-6"><a href="cemetery.html#cb9-6" tabindex="-1"></a>  {</span>
+<span id="cb9-7"><a href="cemetery.html#cb9-7" tabindex="-1"></a>   <span class="fu">R_Date</span>(<span class="st">&quot;LabXX-101&quot;</span><span class="op">,</span> <span class="dv">1033</span><span class="op">,</span> <span class="dv">30</span>)<span class="op">;</span></span>
+<span id="cb9-8"><a href="cemetery.html#cb9-8" tabindex="-1"></a>   <span class="fu">R_Date</span>(<span class="st">&quot;LabXX-102&quot;</span><span class="op">,</span> <span class="dv">1090</span><span class="op">,</span> <span class="dv">37</span>)<span class="op">;</span></span>
+<span id="cb9-9"><a href="cemetery.html#cb9-9" tabindex="-1"></a>   <span class="fu">R_Date</span>(<span class="st">&quot;LabXX-103&quot;</span><span class="op">,</span> <span class="dv">1130</span><span class="op">,</span> <span class="dv">35</span>)</span>
+<span id="cb9-10"><a href="cemetery.html#cb9-10" tabindex="-1"></a>   {</span>
+<span id="cb9-11"><a href="cemetery.html#cb9-11" tabindex="-1"></a>    <span class="fu">Outlier</span>(<span class="st">&quot;Charcoal&quot;</span><span class="op">,</span><span class="dv">1</span>)<span class="op">;</span></span>
+<span id="cb9-12"><a href="cemetery.html#cb9-12" tabindex="-1"></a>   }<span class="op">;</span></span>
+<span id="cb9-13"><a href="cemetery.html#cb9-13" tabindex="-1"></a>   <span class="fu">R_Date</span>(<span class="st">&quot;LabXX-104&quot;</span><span class="op">,</span> <span class="dv">990</span><span class="op">,</span> <span class="dv">34</span>)<span class="op">;</span></span>
+<span id="cb9-14"><a href="cemetery.html#cb9-14" tabindex="-1"></a>   <span class="fu">R_Date</span>(<span class="st">&quot;LabXX-105&quot;</span><span class="op">,</span> <span class="dv">1087</span><span class="op">,</span> <span class="dv">32</span>)<span class="op">;</span></span>
+<span id="cb9-15"><a href="cemetery.html#cb9-15" tabindex="-1"></a>   <span class="fu">R_Date</span>(<span class="st">&quot;LabXX-106&quot;</span><span class="op">,</span> <span class="dv">1080</span><span class="op">,</span> <span class="dv">35</span>)<span class="op">;</span></span>
+<span id="cb9-16"><a href="cemetery.html#cb9-16" tabindex="-1"></a>   <span class="fu">R_Date</span>(<span class="st">&quot;LabXX-107&quot;</span><span class="op">,</span> <span class="dv">1075</span><span class="op">,</span> <span class="dv">26</span>)<span class="op">;</span></span>
+<span id="cb9-17"><a href="cemetery.html#cb9-17" tabindex="-1"></a>   <span class="fu">R_Date</span>(<span class="st">&quot;LabXX-108&quot;</span><span class="op">,</span> <span class="dv">1049</span><span class="op">,</span> <span class="dv">31</span>)<span class="op">;</span></span>
+<span id="cb9-18"><a href="cemetery.html#cb9-18" tabindex="-1"></a>   <span class="fu">R_Date</span>(<span class="st">&quot;LabXX-109&quot;</span><span class="op">,</span> <span class="dv">1081</span><span class="op">,</span> <span class="dv">29</span>)<span class="op">;</span></span>
+<span id="cb9-19"><a href="cemetery.html#cb9-19" tabindex="-1"></a>   <span class="fu">R_Date</span>(<span class="st">&quot;LabXX-110&quot;</span><span class="op">,</span> <span class="dv">1277</span><span class="op">,</span> <span class="dv">40</span>)</span>
+<span id="cb9-20"><a href="cemetery.html#cb9-20" tabindex="-1"></a>   {</span>
+<span id="cb9-21"><a href="cemetery.html#cb9-21" tabindex="-1"></a>    <span class="fu">Outlier</span>(<span class="st">&quot;Charcoal&quot;</span><span class="op">,</span><span class="dv">1</span>)<span class="op">;</span></span>
+<span id="cb9-22"><a href="cemetery.html#cb9-22" tabindex="-1"></a>   }<span class="op">;</span></span>
+<span id="cb9-23"><a href="cemetery.html#cb9-23" tabindex="-1"></a>   <span class="fu">R_Date</span>(<span class="st">&quot;LabXX-111&quot;</span><span class="op">,</span> <span class="dv">1104</span><span class="op">,</span> <span class="dv">39</span>)</span>
+<span id="cb9-24"><a href="cemetery.html#cb9-24" tabindex="-1"></a>   {</span>
+<span id="cb9-25"><a href="cemetery.html#cb9-25" tabindex="-1"></a>    <span class="fu">Outlier</span>(<span class="st">&quot;Charcoal&quot;</span><span class="op">,</span><span class="dv">1</span>)<span class="op">;</span></span>
+<span id="cb9-26"><a href="cemetery.html#cb9-26" tabindex="-1"></a>   }<span class="op">;</span></span>
+<span id="cb9-27"><a href="cemetery.html#cb9-27" tabindex="-1"></a>   <span class="fu">R_Date</span>(<span class="st">&quot;LabXX-112&quot;</span><span class="op">,</span> <span class="dv">1147</span><span class="op">,</span> <span class="dv">32</span>)</span>
+<span id="cb9-28"><a href="cemetery.html#cb9-28" tabindex="-1"></a>   {</span>
+<span id="cb9-29"><a href="cemetery.html#cb9-29" tabindex="-1"></a>    <span class="fu">Outlier</span>(<span class="st">&quot;Charcoal&quot;</span><span class="op">,</span><span class="dv">1</span>)<span class="op">;</span></span>
+<span id="cb9-30"><a href="cemetery.html#cb9-30" tabindex="-1"></a>   }<span class="op">;</span></span>
+<span id="cb9-31"><a href="cemetery.html#cb9-31" tabindex="-1"></a>  }<span class="op">;</span></span>
+<span id="cb9-32"><a href="cemetery.html#cb9-32" tabindex="-1"></a> }<span class="op">;</span></span></code></pre></div>
 <script>
  Plot()
  {

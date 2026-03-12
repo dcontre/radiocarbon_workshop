@@ -802,9 +802,18 @@ How good are our results? Well, if we take the medians of the boundaries (not id
 
 ####Simulating radiocarbon samples in OxCal
 
-If you want to explore these uncertainties further, you can re-run this example with different simulated dates. The `R_Simulate` command in OxCal randomly generates a radiocarbon age that *might result* from a given calendar age.
+If you want to explore these uncertainties further, you can re-run this example with different simulated dates. The `R_Simulate` command in OxCal randomly generates a radiocarbon age that *might result* from a given calendar age. You can use 'Insert'-->'R_Simulate' or edit code directly to produce generate multiple radiocarbon dates from the same calendar date, for example.  
 
-####### example code
+```{js}
+ Plot()
+ {
+  Curve("SHCal20","shcal20.14c");
+  C_Date("Date of death", 1074, 1);
+  R_Simulate("Sim1", 1074, 25);
+  R_Simulate("Sim2", 1074, 25);
+  R_Simulate("Sim3", 1074, 25);
+ };
+```
 
 ### Introducing real-world complications
 
