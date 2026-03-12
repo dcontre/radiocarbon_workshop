@@ -815,6 +815,10 @@ If you want to explore these uncertainties further, you can re-run this example 
  };
 ```
 
+```{r echo = F, out.width='100%', out.extra='style="padding:10px"', fig.cap="Multiple simulated dates from the same calendar date will vary!"}
+knitr::include_graphics("imgs/oxcal/sim_simple.png")
+```
+
 ### Introducing real-world complications
 
 So far we have ignored a fundamental question: *what have we dated?*

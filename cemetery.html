@@ -1104,7 +1104,7 @@ Figure 5.25: Plotting multiple dates.
 </div>
 <div id="visual-inspection-of-calibrated-14c-determinations." class="section level4 hasAnchor" number="5.4.5.2">
 <h4><span class="header-section-number">5.4.5.2</span> Visual inspection of calibrated <span class="math inline">\(^{14}C\)</span> determinations.<a href="cemetery.html#visual-inspection-of-calibrated-14c-determinations." class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<p>As Bayliss and colleagues <span class="citation">(2007, 8–9)</span> discuss in detail, visual inspection of assemblages of radiocarbon dates almost inevitably leads to overestimation of the spans of time that produced those assemblages. If we take the maximum and minimum of the 95% HDRs, we get 685 - 1212. A similar but less precise estimate - the one most archaeologists would probably give - based on visual inspection of the calibrated ranges would likely be something like, “about 850 CE to a bit after 1200 CE”.</p>
+<p>As Bayliss and colleagues <span class="citation">(2007, 8–9)</span> discuss in detail, visual inspection of assemblages of radiocarbon dates almost inevitably leads to overestimation of the spans of time that produced those assemblages. If we take the maximum and minimum of the 95% HDRs, we get 706 - 1272. A similar but less precise estimate - the one most archaeologists would probably give - based on visual inspection of the calibrated ranges would likely be something like, “about 850 CE to a bit after 1200 CE”.</p>
 <p><span style="color: red;">But in fact our simulated <span class="math inline">\(^{14}C\)</span> ages are from samples drawn from a uniform distribution covering the interval <strong>800 - 1100 CE</strong>.</span></p>
 <div class="figure"><span style="display:block;" id="fig:unnamed-chunk-37"></span>
 <img src="radiocarbon_workshop_files/figure-html/unnamed-chunk-37-1.png" alt="Calendar dates and simulated radiocarbon dates." width="672" />
@@ -1256,6 +1256,12 @@ Figure 5.28: KDE and boundaries.
   R_Simulate("Sim3", 1074, 25);
  };
 </script>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-43"></span>
+<img src="imgs/oxcal/sim_simple.png" alt="Multiple simulated dates from the same calendar date will vary!" width="100%" style="padding:10px" />
+<p class="caption">
+Figure 5.29: Multiple simulated dates from the same calendar date will vary!
+</p>
+</div>
 </div>
 </div>
 <div id="introducing-real-world-complications" class="section level3 hasAnchor" number="5.4.6">
@@ -1267,10 +1273,10 @@ Figure 5.28: KDE and boundaries.
 <div id="old-wood" class="section level4 hasAnchor" number="5.4.6.1">
 <h4><span class="header-section-number">5.4.6.1</span> old wood<a href="cemetery.html#old-wood" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>Trees are often long-lived organisms whose growth occurs in discrete (often but not necessarily annual) increments - tree rings. Their tissue incorporates atmospheric carbon through photosynthesis across the entire lifespan of the tree; each ring is in equilibrium with atmospheric carbon at the time that it is formed. In consequence, interior rings will have a radiocarbon age (and in fact a calendar age) greater than that of exterior rings. In the case of wood recovered in archaeological context (<em>e.g.</em>, timber in construction), the date of interest is usually the moment of harvest. Unless the outermost rings (or small twigs) are sampled, however, there is a risk that the estimated age may be much older - as much as centuries older, in the case of long-lived species. In Figure 5.29, a sample from rings laid down around 570 CE would (and should!) have a very different radiocarbon age than a sample from rings laid down around 1492 CE.</p>
-<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-43"></span>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-44"></span>
 <img src="imgs/bigbasin_redwood.png" alt="Cross-section of a California redwood (*Sequoia sempervirens*) that sprouted in 544 CE and fell in 1936 CE. A 1cm$^{3}$ wood sample from near the center of the trunk would - accurately - produce a radiocarbon age &gt;1000 years older than one near the bark." width="100%" style="padding:10px" />
 <p class="caption">
-Figure 5.29: Cross-section of a California redwood (<em>Sequoia sempervirens</em>) that sprouted in 544 CE and fell in 1936 CE. A 1cm<span class="math inline">\(^{3}\)</span> wood sample from near the center of the trunk would - accurately - produce a radiocarbon age &gt;1000 years older than one near the bark.
+Figure 5.30: Cross-section of a California redwood (<em>Sequoia sempervirens</em>) that sprouted in 544 CE and fell in 1936 CE. A 1cm<span class="math inline">\(^{3}\)</span> wood sample from near the center of the trunk would - accurately - produce a radiocarbon age &gt;1000 years older than one near the bark.
 </p>
 </div>
 </div>
@@ -1281,36 +1287,36 @@ Figure 5.29: Cross-section of a California redwood (<em>Sequoia sempervirens</em
 <div id="marine-reservoir" class="section level4 hasAnchor" number="5.4.6.3">
 <h4><span class="header-section-number">5.4.6.3</span> marine reservoir<a href="cemetery.html#marine-reservoir" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>Note that the illustration of the carbon cycle (Figure 5.5) includes exchange between ocean and atmosphere. This exchange, because oceans constitute a much greater proportion of the southern hemisphere than the northern, is a contributor to the <a href="cemetery.html#curves">contrast in atmospheric <span class="math inline">\(^{14}C\)</span> between hemispheres</a>. The amount of ocean-atmosphere exchange is significant because the oceans (and other bodies of water, though we won’t cover freshwater here) contain “old” carbon, which is to say carbon &gt;55kya, with no <span class="math inline">\(^{14}C\)</span> remaining. Globally, surface water in the oceans is ~400 radiocarbon years older than the atmosphere; where upwelling introduces deeper water and correspondingly more old carbon, the offset can be greater. The age of marine carbon can have both direct and indirect impacts on radiocarbon ages of archaeological materials. Organisms that derive some or all of the carbon in their tissues from marine rather than atmospheric sources will be incorporating carbon with greater apparent age. If the offset between marine carbon and atmospheric carbon at the time and place of tissue formation were known, it would be straightforward to calculate the calendar age of a sample even if its carbon were marine in origin. Complications arise because the offset between marine and atmospheric carbon is variable in space and time, and because organisms may incorporate carbon from a mixture of different reservoirs. Ideally this is managed by establishing the local offset from the global marine average (the Marine20 calibration curve <span class="citation">(Heaton et al. 2020)</span>) for the period of interest. Establishing that globally, even for recent times, is complicated by post-1945 atomic testing. A regularly updated database of radiocarbon measuremnts on pre-bomb marine samples of known age <span class="citation">(Reimer and Reimer 2001)</span> is available at <a href="http://calib.org/marine/">calib.org</a>. It is, however, sparse for many regions globally, including coastal Peru (Figure 5.30). It alo consists primarily of early <span class="math inline">\(20^{th}\)</span>-century materials, meaning that it cannot account for past variations in <span class="math inline">\(\Delta{R}\)</span>. Since <span class="math inline">\(\Delta{R}\)</span> is sensitive to strength of upwelling, past variation is to be expected, particularly given the effects of ENSO on upwelling off the coast of western South America <span class="citation">(Jones et al. 2010)</span>.</p>
-<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-44"></span>
-<img src="radiocarbon_workshop_files/figure-html/unnamed-chunk-44-1.png" alt="Data in calib.org/marine for coastal Peru, as of 08/2024." width="672" />
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-45"></span>
+<img src="radiocarbon_workshop_files/figure-html/unnamed-chunk-45-1.png" alt="Data in calib.org/marine for coastal Peru, as of 08/2024." width="672" />
 <p class="caption">
-Figure 5.30: Data in calib.org/marine for coastal Peru, as of 08/2024.
+Figure 5.31: Data in calib.org/marine for coastal Peru, as of 08/2024.
 </p>
 </div>
 <p>The preferred solution for archaeological questions is to date paired marine and terrestrial samples from the region and time period of interest - that is, from the same context and believed to be of the same age - in order to directly establish the relevant <span class="math inline">\(\Delta{R}\)</span>. While this should improve age estimates, however, the multiple uncertainties involved in such a project are likely to make dating samples with marine reservoir offsets useful only if the underlying chronological questions do not require high precision. Bayliss and Marshall <span class="citation">(2022, 40)</span> go so far as to drily advise that, “the best policy for dealing with samples that exhibit reservoir effects is avoidance”.</p>
-<p><img src="radiocarbon_workshop_files/figure-html/unnamed-chunk-45-1.png" width="672" /><img src="radiocarbon_workshop_files/figure-html/unnamed-chunk-45-2.png" width="672" /></p>
+<p><img src="radiocarbon_workshop_files/figure-html/unnamed-chunk-46-1.png" width="672" /><img src="radiocarbon_workshop_files/figure-html/unnamed-chunk-46-2.png" width="672" /></p>
 <pre><code>## [1] 21.0 48.9</code></pre>
 <div id="diet" class="section level5 hasAnchor" number="5.4.6.3.1">
 <h5><span class="header-section-number">5.4.6.3.1</span> dietary offsets<a href="cemetery.html#diet" class="anchor-section" aria-label="Anchor link to header"></a></h5>
 <p>Marine reservoir effects impact more than just marine organisms. Animals - including humans - derive the carbon used to build tissue from the the organisms that they consume (similarly, marine and aquatic plants, if even partially submerged, are likely to derive at least some of their carbon from non-atmospheric reservoirs). Animals that consume marine organisms thus derive some of their carbon from marine reservoirs. If 50% of their diet is marine, then 50% of their carbon will be marine, and the appropriate calibration curve would be a 50/50 mix of atmospheric (IntCal20 or SHCal20) and marine (Marine20, adjusted for local <span class="math inline">\(\Delta{R}\)</span>). Estimating the dietary inputs of the organism from which a dated sample is derived can thus be a key consideration. This is most commonly an issue for dates on human tissue in coastal settings. In such cases either greater uncertainty has to be built into the age estimate, or some approximation of the relative contribution of different reservoirs established. The latter generally is derived from measurements of stable carbon and nitrogen isotopes <span class="citation">(Richards 2020)</span>, which in combination are used to estimate long-term sources of dietary protein (Figure 5.31) using mixing models (e.g., the <em>R</em> packages <strong>simmr</strong> <span class="citation">(Govan and Parnell 2024)</span> and <strong>MixSIAR</strong> <span class="citation">(Stock et al. 2018)</span>).</p>
-<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-46"></span>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-47"></span>
 <img src="imgs/dietary_estimation.png" alt="Proportion of diet derived from marine sources can be estimated using C and N isotopes." width="100%" style="padding:10px" />
 <p class="caption">
-Figure 5.31: Proportion of diet derived from marine sources can be estimated using C and N isotopes.
+Figure 5.32: Proportion of diet derived from marine sources can be estimated using C and N isotopes.
 </p>
 </div>
 <p>Because these estimates come with their own uncertainties - a typical output of a mixing model is an estimate of % marine contribution to diet something like “42 ±25” - they tend to produce age estimates that, while more accurate than those calculated with the wrong curve, are less precise. Consider, for example, the first of the simulated dates that we have used above (LabXX-01): for a calendar age of 1074 CE we generated a simulated <span class="math inline">\(^{14}C\)</span> age of 925 ±28 using a southern hemisphere reservoir, which we calibrated with SHCal20 to produce a 95% HDR of 1052 - 1269 CE (Figure 5.32).</p>
-<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-47"></span>
-<img src="radiocarbon_workshop_files/figure-html/unnamed-chunk-47-1.png" alt="Calendar age of 1074 CE, simulated $^{14}C$ age of 925 ±28, calibrated with SHCal20." width="672" />
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-48"></span>
+<img src="radiocarbon_workshop_files/figure-html/unnamed-chunk-48-1.png" alt="Calendar age of 1074 CE, simulated $^{14}C$ age of 925 ±28, calibrated with SHCal20." width="672" />
 <p class="caption">
-Figure 5.32: Calendar age of 1074 CE, simulated <span class="math inline">\(^{14}C\)</span> age of 925 ±28, calibrated with SHCal20.
+Figure 5.33: Calendar age of 1074 CE, simulated <span class="math inline">\(^{14}C\)</span> age of 925 ±28, calibrated with SHCal20.
 </p>
 </div>
 <p>What if we instead consider sample LabXX-01 to be a sample of human bone, from an individual whose diet was 50% marine, who died in 1074 CE?</p>
-<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-48"></span>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-49"></span>
 <img src="imgs/oxcal/simdates_marinesim.png" alt="Effects of 50% marine diet on a calibrated age estimate." width="100%" style="padding:10px" />
 <p class="caption">
-Figure 5.33: Effects of 50% marine diet on a calibrated age estimate.
+Figure 5.34: Effects of 50% marine diet on a calibrated age estimate.
 </p>
 </div>
 <p>Introducing reservoir complications obviously degrades the precision of any age estimate - and this is assuming that we <em>know</em> the % marine diet and the local <span class="math inline">\(\Delta{R}\)</span>! In fact we should probably consider scenarios where the sample incorporates at least some carbon from the marine reservoir, <em>but we don’t know how much</em> and we may not not know the right correction to apply (i.e., the local <span class="math inline">\(\Delta{R}\)</span>). Let’s examine three scenarios where the dated individual died in 1074 CE, and consumed a diet that was 50% marine:</p>
@@ -1319,10 +1325,10 @@ Figure 5.33: Effects of 50% marine diet on a calibrated age estimate.
 <li>We don’t know anything about this individual’s diet, but consider it <em>likely</em> that they had a significant marine dietary component, and realize that our calibration should account for this. We know the local <span class="math inline">\(\Delta{R}\)</span> is -200 ±75 years, and can thus model the effects of a diet that might range anywhere from 0 - 100% marine. (Figure 5.34, 01b)</li>
 <li>Based on the C/N isotopic composition of the sampled bone and the application of a mixing model, we are able to estimate that their diet was 50 ±20% marine, and we know the local <span class="math inline">\(\Delta{R}\)</span> is -200 ±75 years. (Figure 5.34, 01c)</li>
 </ul>
-<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-49"></span>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-50"></span>
 <img src="imgs/oxcal/simdates_marinesim_calib.png" alt="Effects of different assumptions about a 50% marine diet on a calibrated age estimate." width="100%" style="padding:10px" />
 <p class="caption">
-Figure 5.34: Effects of different assumptions about a 50% marine diet on a calibrated age estimate.
+Figure 5.35: Effects of different assumptions about a 50% marine diet on a calibrated age estimate.
 </p>
 </div>
 <p>It should be clear that the worst possible scenario is one where we make the wrong assumption about the reservoir effects in this sample. In that case (01a), we get a relative precise answer…but one that is significantly inaccurate. For an individual that died in 1074 CE, we produce an estimate with a median of 943 CE and a 95% HDR of 889-995 (92%) and 1006-1017 (4%). In contrast, if we can approximate the marine dietary input (01c), we can produce an <em>accurate</em> result, but one that - as a result of accumulating uncertainties - is of notably low precision (median of 1088 CE and a 95% HDR of 905-923 (1%) and 963-1255 (4%)). In case we know even less about diet and/or local <span class="math inline">\(\Delta{R}\)</span>, we can produce an estimate that is accurate but even less precise (01b).</p>
@@ -1405,10 +1411,10 @@ Figure 5.34: Effects of different assumptions about a 50% marine diet on a calib
 <p>A radiocarbon date will give an average of the dates on which the growth rings that constitute the sample were formed. If an exterior ring is dated and the trunk or branch was harvested while living, this will be the date of harvest. If interior rings are sampled and/or the wood was already dead when harvested and/or the wood was used for some span of time post-harvest but pre-carbonization and/or the burn event predated the burial event, the dated event may be as much as centuries before interment.</p>
 </details>
 <p>Understanding what the dated event is and assessing how it related to the target event is fundamental to accurate age estimates. If the difference between dated event and target event is known or can be estimated, then a radiocarbon determination can still produce a useful age estimate. If the difference between the two is unknown, then the radiocarbon determination can only provide an uncertain age estimate, one that accounts for the greatest possible offset between dated event and target event. Suppose for example that the burial described above turns out to also contain a wooden figurine (Figure 5.35). In order to accurately estimate the moment of deposition from a radiocarbon age estimate of that wood, we would need to estimate 1) the age of the wood when harvested (i.e., which part of the tree was used, and how old that wood might have been), 2) the amount of time that passed between the death of the tree (if it preceded harvest), harvest of the wood, and the carving of the object, and 3) the amount of time elapsed between carving of the figurine and its deposition in the burial. This is asking a lot - but if we <em>could</em> estimate those, we could adjust the radiocarbon age by applying an estimated offset, and come up with an estimated date of deposition. As with dietary offsets for bone samples, applying an age offset is likely to incorporate additional uncertainty, and consequently reduce the precision of our age estimate.</p>
-<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-50"></span>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-51"></span>
 <img src="imgs/brokenear.png" alt="Wooden figurine." width="206" style="float:right; padding:10px" />
 <p class="caption">
-Figure 5.35: Wooden figurine.
+Figure 5.36: Wooden figurine.
 </p>
 </div>
 <p>(In fact, examining Figure 5.35 might lead you to suspect that, on stylistic grounds, the figurine <em>postdated</em> the burial, arguing for some post-depositional disturbance - but never mind; that’s not our point here.)</p>
@@ -1421,7 +1427,7 @@ Figure 5.35: Wooden figurine.
 <p>To illustrate this Bayesian modeling approach, let’s examine a new set of simulated data, focusing on 12 simulated dates from materials from Burial 11/92 and the question of trying to estimate the date of interment.</p>
 <table class=" lightable-classic" style="font-family: Cambria; width: auto !important; margin-left: auto; margin-right: auto;">
 <caption>
-<span id="tab:unnamed-chunk-51">Table 5.1: </span>Radiocarbon dates from Burial 11/92
+<span id="tab:unnamed-chunk-52">Table 5.1: </span>Radiocarbon dates from Burial 11/92
 </caption>
 <thead>
 <tr>
@@ -1454,7 +1460,7 @@ LabXX-101
 gourd
 </td>
 <td style="text-align:right;">
-1084
+1019
 </td>
 <td style="text-align:right;">
 30
@@ -1471,7 +1477,7 @@ LabXX-102
 textile
 </td>
 <td style="text-align:right;">
-1035
+1089
 </td>
 <td style="text-align:right;">
 37
@@ -1488,7 +1494,7 @@ LabXX-103
 wood
 </td>
 <td style="text-align:right;">
-1131
+1126
 </td>
 <td style="text-align:right;">
 35
@@ -1505,7 +1511,7 @@ LabXX-104
 human bone
 </td>
 <td style="text-align:right;">
-1052
+1064
 </td>
 <td style="text-align:right;">
 34
@@ -1522,7 +1528,7 @@ LabXX-105
 human bone
 </td>
 <td style="text-align:right;">
-1027
+1056
 </td>
 <td style="text-align:right;">
 32
@@ -1539,7 +1545,7 @@ LabXX-106
 human bone
 </td>
 <td style="text-align:right;">
-1003
+1046
 </td>
 <td style="text-align:right;">
 35
@@ -1556,7 +1562,7 @@ LabXX-107
 camelid bone
 </td>
 <td style="text-align:right;">
-1023
+987
 </td>
 <td style="text-align:right;">
 26
@@ -1573,7 +1579,7 @@ LabXX-108
 cane
 </td>
 <td style="text-align:right;">
-1073
+1032
 </td>
 <td style="text-align:right;">
 31
@@ -1590,7 +1596,7 @@ LabXX-109
 cane
 </td>
 <td style="text-align:right;">
-1025
+1023
 </td>
 <td style="text-align:right;">
 29
@@ -1607,7 +1613,7 @@ LabXX-110
 charcoal
 </td>
 <td style="text-align:right;">
-1206
+1210
 </td>
 <td style="text-align:right;">
 40
@@ -1624,7 +1630,7 @@ LabXX-111
 charcoal
 </td>
 <td style="text-align:right;">
-1111
+1156
 </td>
 <td style="text-align:right;">
 39
@@ -1641,7 +1647,7 @@ LabXX-112
 charcoal
 </td>
 <td style="text-align:right;">
-1083
+1096
 </td>
 <td style="text-align:right;">
 32
@@ -1657,26 +1663,26 @@ charcoal
 ##   Boundary(&quot;&quot;);
 ##   Phase(&quot;11/92&quot;)
 ##   {
-##    R_Date(&quot;LabXX-101&quot;, 1084, 30);
-##    R_Date(&quot;LabXX-102&quot;, 1035, 37);
-##    R_Date(&quot;LabXX-103&quot;, 1131, 35);
-##    R_Date(&quot;LabXX-104&quot;, 1052, 34);
-##    R_Date(&quot;LabXX-105&quot;, 1027, 32);
-##    R_Date(&quot;LabXX-106&quot;, 1003, 35);
-##    R_Date(&quot;LabXX-107&quot;, 1023, 26);
-##    R_Date(&quot;LabXX-108&quot;, 1073, 31);
-##    R_Date(&quot;LabXX-109&quot;, 1025, 29);
-##    R_Date(&quot;LabXX-110&quot;, 1206, 40);
-##    R_Date(&quot;LabXX-111&quot;, 1111, 39);
-##    R_Date(&quot;LabXX-112&quot;, 1083, 32);
+##    R_Date(&quot;LabXX-101&quot;, 1019, 30);
+##    R_Date(&quot;LabXX-102&quot;, 1089, 37);
+##    R_Date(&quot;LabXX-103&quot;, 1126, 35);
+##    R_Date(&quot;LabXX-104&quot;, 1064, 34);
+##    R_Date(&quot;LabXX-105&quot;, 1056, 32);
+##    R_Date(&quot;LabXX-106&quot;, 1046, 35);
+##    R_Date(&quot;LabXX-107&quot;, 987, 26);
+##    R_Date(&quot;LabXX-108&quot;, 1032, 31);
+##    R_Date(&quot;LabXX-109&quot;, 1023, 29);
+##    R_Date(&quot;LabXX-110&quot;, 1210, 40);
+##    R_Date(&quot;LabXX-111&quot;, 1156, 39);
+##    R_Date(&quot;LabXX-112&quot;, 1096, 32);
 ##   };
 ##   Boundary(&quot;&quot;);
 ##  };</code></pre>
 <p>With results that look like those in Figure 5.36 (‘View’ –&gt; ‘Plot dates’)… <!-- problem of set.seed() not working here; results discussed below will change --></p>
-<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-53"></span>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-54"></span>
 <img src="imgs/oxcal/sim_example_burial1192.png" alt="Bounded phase model for $^{14}C$ dates from Burial 11/92." width="340" />
 <p class="caption">
-Figure 5.36: Bounded phase model for <span class="math inline">\(^{14}C\)</span> dates from Burial 11/92.
+Figure 5.37: Bounded phase model for <span class="math inline">\(^{14}C\)</span> dates from Burial 11/92.
 </p>
 </div>
 <p>…and an <span class="math inline">\(A_{model}\)</span> of ~57, below the notional threshold of 60 that indicates consistency between model parameters and input data (this will produce an <span style="color: red;">angry red</span> warning).</p>
@@ -1693,18 +1699,18 @@ Figure 5.36: Bounded phase model for <span class="math inline">\(^{14}C\)</span>
 <p>The identification of samples that are affected by offsets is generally more difficult than the identification of misfits, since offsets are often of a scale small enough that age estimates will not be obviously inaccurate. Their identification is further complicated by the fact that we must also consider <em>outliers</em>: since we are producing age estimates based on probabilities, we should expect that some samples will not match our expectations. If we are describing a calibrated radiocarbon age using a 95% HDR, there is a 5% chance - 1 in 20 - that the calendar age of the sample is in fact <em>outside</em> of the range we specify. For details of how these cases can be handled in OxCal, see Bronk Ramsey’s <span class="citation">(2009)</span> discussion (confusingly, OxCal uses the same term (“outlier”) to refer to outliers, offsets, and misfits).</p>
 <p>In our example case, let’s suppose that we have C/N results from the human bone samples that rule out the possibility of a marine dietary component (admittedly unlikely, near the coast, but we have enough complications already, without adding that one). With that in mind, let’s re-examine Table 5.1 and Figure 5.36. For which samples - based on the materials dated - should we <em>expect</em> a close match between dated event and the moment of burial? For which should we expect offsets, and of what scale?</p>
 <p>‘Tools’–&gt;‘Models’–&gt;‘Outlier Model’, and under ‘Prototype’, select “Charcoal”. This will populate the other fields, and when you click ‘Ok’, will add a line to your model that describes a Charcoal Outlier Model, which we can then invoke for any particular sample. To do that, select the sample, then ‘Insert’–&gt;‘Other’–&gt;‘Outlier’, and specify “Charcoal” as the model and “1” as the probability. That will tell the model that we <em>expect</em> the sample to be older than the target event. We’re not sure by how much, but The model that we’ve specified</p>
-<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-54"></span>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-55"></span>
 <img src="imgs/oxcal/outlier_model.png" alt="Adding an Outlier Model." width="377" style="float:right; padding:10px" />
 <p class="caption">
-Figure 5.37: Adding an Outlier Model.
+Figure 5.38: Adding an Outlier Model.
 </p>
 </div>
 <p>You can also of course do this by editing the OxCal code directly, but watch out for <code>{}</code> and <code>;</code>, which are easy to drop, and without which your code will fail.</p>
 <p>Applying a charcoal model to all samples for which it’s appropriate and re-running the model will <em>very</em> likely produce a model with a higher ‘A’ index, because we have told the model to <em>expect</em> those samples to be too old, and to adjust the posterior estimates accordingly. Since we don’t know the exact magnitude of the offset, and since it will vary from one sample to the next, the model will calculate which offsets are both consistent with the outlier model that we’ve specified and with other parameters, and adjust the probability density function for each date accordingly. If you plot the results and make sure that “Color outliers’ is selected under ‘Edit’–&gt;‘Format’, you should see results something like Figure 5.38, and an ‘A’ index closer to 120 than to 60.</p>
-<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-55"></span>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-56"></span>
 <img src="imgs/oxcal/outlier_model.png" alt="Results of applying an Outlier Model." width="377" style="padding:10px" />
 <p class="caption">
-Figure 5.38: Results of applying an Outlier Model.
+Figure 5.39: Results of applying an Outlier Model.
 </p>
 </div>
 <p>Here we have enacted modeling as an iterative process - building a model demonstrated that we needed to apply chronometric hygiene (we had implicitly accepted all of our samples as dating the target event), and applying chronometric hygiene enabled us to rebuild and rerun the model. This process - making our assumptions explicit, examining their implications, and reconsidering our assumptions - is an applicaiton of Bayesian modeling that Bayliss <span class="citation">(Bayliss et al. 2007, 4)</span> argues is the operationalization of Hodder’s <span class="citation">(1995)</span> hermeneutic spiral.</p>
