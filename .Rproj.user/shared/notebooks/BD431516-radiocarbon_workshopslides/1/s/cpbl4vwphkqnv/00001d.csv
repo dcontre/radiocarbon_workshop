@@ -1,0 +1,4 @@
+"0","norm <- distribution_plot('norm', mean = 950, limits = c(600, 1300), sd = 100, title = ""norm"")
+"
+"2","Error in d_fun(x, ...) : unused argument (title = ""norm"")
+"

@@ -1,0 +1,45 @@
+---
+title: "Untitled"
+author: "D. Contreras"
+date: "2026-03-09"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+or with **rice**
+
+```{r}
+mix.ccurves(proportion = .5, cc1 = "SHCal20", cc2 = "Marine20", cc.dir = "./cc", name = "mixed.14C", 
+            save = T, offset = cbind(200, 75)) 
+#the mixed curve that rintcal::mix.ccurves is writing only has 3 columns rather than 5, and when rice::calibrate tries to read it it produces a read.table erro
+rice::calibrate(925, 28, BCAD = T, cc = 4, 
+                ccdir = '/Users/daniel.contreras/UF Dropbox/Daniel Contreras/Teaching/radiocarbon_workshop/cc/')
+points(1074, 695, col = "skyblue", pch = 3, cex = 1.5, lwd = 2)
+
+#maybe generate simulated date using rnorm() and then rice::r.calib()
+
+```
+
+
+
+
+####### example of date on human tissue w/ 50% marine diet: 
+a) calendar age (1074 CE) with a simulated $^{14}C$ age of 896 ±31 vs 
+b) simulated 14C age calibrated w/ atmospheric curve vs 
+c) simulated 14C age calibrated w/ known $\Delta{R}$ and 50/50 mixed curve vs 
+d) simulated 14C age calibrated w/ known $\Delta{R}$ variable mix curve vs 
+e) simulated 14C age calibrated w/ unknown $\Delta{R}$ variable mix curve [compare accuracy and precision]
+
+or correct answers for, highlighting changes in precision and ignoring accuracy: 
+- individual w/ terrestrial diet 
+- individual w/ 50% marine diet, known delta R 
+<!-- - individual w/ 50% marine diet, unknown delta R  -->
+<!-- - individual w/ unknown marine diet, unknown delta R  -->
+
+###### assign materials and add offsets to simulated ages, then rerun example w/o fixes and see how much worse the result is; then start to apply fixes [or make this Exercise 1, and make Exercise 2 one w/ a sigma boundary and marine reservoir?]
+
+##### maybe show exercise of different dates on materials from same burial, then make take-home exercise to do the same with materials from different burials?

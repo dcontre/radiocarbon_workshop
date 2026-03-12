@@ -1,0 +1,5 @@
+"0",""
+"0","#check simulated dates"
+"0","# bur20_sim %>% mutate(cal = c14_calibrate(rCRA, rError, cc = 3))"
+"0","#or"
+"0","bur20_sim %>% mutate(cal = c14_calibrate(c14age, c14std, cc = 3))"

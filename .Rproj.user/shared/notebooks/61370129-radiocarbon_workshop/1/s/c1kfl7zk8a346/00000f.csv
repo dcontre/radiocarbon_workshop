@@ -1,0 +1,3 @@
+"0","set.seed(42)"
+"0","data.frame(ages = round(runif(5, min = 800, max = 1100), -2)) %>% kbl() %>% "
+"0","    kable_minimal(latex_options = ""basic"", full_width = F)"

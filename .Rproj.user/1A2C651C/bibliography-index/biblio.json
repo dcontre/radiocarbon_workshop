@@ -1,0 +1,1928 @@
+{
+    "sources": [
+        {
+            "author": [
+                {
+                    "family": "Bayliss",
+                    "given": "Alex"
+                },
+                {
+                    "family": "Bronk Ramsey",
+                    "given": "Christopher"
+                },
+                {
+                    "dropping-particle": "van der",
+                    "family": "Plicht",
+                    "given": "Johannes"
+                },
+                {
+                    "family": "Whittle",
+                    "given": "Alasdair"
+                }
+            ],
+            "container-title": "Cambridge Archaeological Journal",
+            "id": "bayliss2007",
+            "issue": "1",
+            "issued": {
+                "date-parts": [
+                    [
+                        2007
+                    ]
+                ]
+            },
+            "page": "128",
+            "title": "Bradshaw and bayes: Towards a timetable for the neolithic",
+            "title-short": "Bradshaw and bayes",
+            "type": "article-journal",
+            "volume": "17"
+        },
+        {
+            "DOI": "10.1080/00776297.2022.2028389",
+            "URL": "http://dx.doi.org/10.1080/00776297.2022.2028389",
+            "author": [
+                {
+                    "family": "Contreras",
+                    "given": "Daniel A."
+                }
+            ],
+            "container-title": "Ñawpa Pacha",
+            "id": "contreras2022",
+            "issue": "2",
+            "issued": {
+                "date-parts": [
+                    [
+                        2022,
+                        2,
+                        22
+                    ]
+                ]
+            },
+            "language": "en",
+            "page": "205-233",
+            "title": "Stages, Periods, and Radiocarbon:<sup>14</sup>C Dating in the Archaeology of the Central Andes",
+            "title-short": "Stages, Periods, and Radiocarbon",
+            "type": "article-journal",
+            "volume": "42"
+        },
+        {
+            "author": [
+                {
+                    "family": "Quilter",
+                    "given": "Jeffrey"
+                },
+                {
+                    "family": "Harkins",
+                    "given": "Kelly"
+                },
+                {
+                    "family": "Fanco Jordan",
+                    "given": "Régulo"
+                },
+                {
+                    "family": "Marsh",
+                    "given": "Erik"
+                },
+                {
+                    "family": "Prieto",
+                    "given": "Gabriel"
+                },
+                {
+                    "family": "Verano",
+                    "given": "John"
+                },
+                {
+                    "family": "LeBlanc",
+                    "given": "Steven"
+                },
+                {
+                    "family": "Broomandkhoshbacht",
+                    "given": "Nasreen"
+                },
+                {
+                    "family": "Krigbaum",
+                    "given": "John"
+                },
+                {
+                    "family": "Fehren-Schmitz",
+                    "given": "Lars"
+                }
+            ],
+            "container-title": "Proc Natl Acad Sci U S A",
+            "id": "quilter2025",
+            "issue": "1",
+            "issued": {
+                "date-parts": [
+                    [
+                        2025
+                    ]
+                ]
+            },
+            "page": "e2416321121",
+            "title": "Family relations of moche elite burials on the north coast of peru ( 500 CE): Analyses of the señora de cao and relatives",
+            "title-short": "Family relations of moche elite burials on the north coast of peru ( 500 CE)",
+            "type": "article-journal",
+            "volume": "122"
+        },
+        {
+            "author": [
+                {
+                    "family": "Marsh",
+                    "given": "Erik J"
+                },
+                {
+                    "family": "Bruno",
+                    "given": "Maria C"
+                },
+                {
+                    "family": "Fritz",
+                    "given": "Sherilyn C"
+                },
+                {
+                    "family": "Baker",
+                    "given": "Paul"
+                },
+                {
+                    "family": "Capriles",
+                    "given": "José M"
+                },
+                {
+                    "family": "Hastorf",
+                    "given": "Christine A"
+                }
+            ],
+            "container-title": "Radiocarbon",
+            "id": "marsh2018",
+            "issue": "3",
+            "issued": {
+                "date-parts": [
+                    [
+                        2018
+                    ]
+                ]
+            },
+            "page": "925-940",
+            "title": "IntCal, SHCal, or a mixed curve? Choosing a 14C calibration curve for archaeological and paleoenvironmental records from tropical south america",
+            "type": "article-journal",
+            "volume": "60"
+        },
+        {
+            "author": [
+                {
+                    "family": "Bayliss",
+                    "given": "Alex"
+                },
+                {
+                    "family": "Marshall",
+                    "given": "P"
+                }
+            ],
+            "id": "bayliss2022",
+            "issued": {
+                "date-parts": [
+                    [
+                        2022
+                    ]
+                ]
+            },
+            "publisher": "Historic England",
+            "publisher-place": "London",
+            "title": "Radiocarbon dating and chronological modelling: Guidelines and best practice",
+            "title-short": "Radiocarbon dating and chronological modelling",
+            "type": "book"
+        },
+        {
+            "author": [
+                {
+                    "family": "Bronk Ramsey",
+                    "given": "Christopher"
+                }
+            ],
+            "container-title": "Radiocarbon",
+            "id": "bronkramsey2001",
+            "issue": "2; PART A",
+            "issued": {
+                "date-parts": [
+                    [
+                        2001
+                    ]
+                ]
+            },
+            "page": "355-364",
+            "title": "Development of the radiocarbon calibration program OxCal",
+            "type": "article-journal",
+            "volume": "43"
+        },
+        {
+            "author": [
+                {
+                    "family": "Bronk Ramsey",
+                    "given": "Christopher"
+                }
+            ],
+            "container-title": "Radiocarbon",
+            "id": "bronkramsey2017",
+            "issue": "6",
+            "issued": {
+                "date-parts": [
+                    [
+                        2017
+                    ]
+                ]
+            },
+            "page": "1809-1833",
+            "title": "Methods for summarizing radiocarbon datasets",
+            "type": "article-journal",
+            "volume": "59"
+        },
+        {
+            "author": [
+                {
+                    "family": "Crema",
+                    "given": "Enrico R"
+                },
+                {
+                    "family": "Bevan",
+                    "given": "Andrew"
+                }
+            ],
+            "container-title": "Radiocarbon",
+            "id": "crema2021",
+            "issue": "1",
+            "issued": {
+                "date-parts": [
+                    [
+                        2021
+                    ]
+                ]
+            },
+            "page": "23-39",
+            "title": "Inference from large sets of radiocarbon dates: Software and methods",
+            "title-short": "Inference from large sets of radiocarbon dates",
+            "type": "article-journal",
+            "volume": "63"
+        },
+        {
+            "DOI": "https://doi.org/10.1007/s10816-023-09634-5",
+            "author": [
+                {
+                    "family": "Contreras",
+                    "given": "Daniel A."
+                },
+                {
+                    "family": "Codding",
+                    "given": "Brian F."
+                }
+            ],
+            "container-title": "Journal of Archaeological Method and Theory",
+            "id": "contreras2024",
+            "issued": {
+                "date-parts": [
+                    [
+                        2024
+                    ]
+                ]
+            },
+            "page": "1102-1128",
+            "title": "Landscape taphonomy predictably complicates demographic reconstruction",
+            "type": "article-journal",
+            "volume": "31"
+        },
+        {
+            "author": [
+                {
+                    "family": "Taylor",
+                    "given": "Royal Ervin"
+                },
+                {
+                    "family": "Bar-Yosef",
+                    "given": "Ofer"
+                }
+            ],
+            "edition": "Second",
+            "id": "taylor2014",
+            "issued": {
+                "date-parts": [
+                    [
+                        2014
+                    ]
+                ]
+            },
+            "publisher": "Routledge",
+            "title": "Radiocarbon dating: An archaeological perspective",
+            "title-short": "Radiocarbon dating",
+            "type": "book"
+        },
+        {
+            "author": [
+                {
+                    "family": "Bayliss",
+                    "given": "Alex"
+                },
+                {
+                    "family": "Whittle",
+                    "given": "Alasdair"
+                }
+            ],
+            "editor": [
+                {
+                    "family": "Souvatzi",
+                    "given": "Stella"
+                },
+                {
+                    "family": "Baysal",
+                    "given": "Adnan"
+                },
+                {
+                    "family": "Baysal",
+                    "given": "Emma L"
+                }
+            ],
+            "id": "bayliss2018",
+            "issued": {
+                "date-parts": [
+                    [
+                        2018
+                    ]
+                ]
+            },
+            "page": "123-146",
+            "publisher": "Routledge",
+            "title": "What kind of history in prehistory",
+            "type": "chapter"
+        },
+        {
+            "DOI": "10.1177/14696053231153499",
+            "URL": "http://dx.doi.org/10.1177/14696053231153499",
+            "author": [
+                {
+                    "family": "Griffiths",
+                    "given": "Seren"
+                },
+                {
+                    "family": "Carlin",
+                    "given": "Neil"
+                },
+                {
+                    "family": "Edwards",
+                    "given": "Ben"
+                },
+                {
+                    "family": "Overton",
+                    "given": "Nicholas"
+                },
+                {
+                    "family": "Johnston",
+                    "given": "Penny"
+                },
+                {
+                    "family": "Thomas",
+                    "given": "Julian"
+                }
+            ],
+            "container-title": "Journal of Social Archaeology",
+            "id": "griffiths2023",
+            "issue": "2",
+            "issued": {
+                "date-parts": [
+                    [
+                        2023,
+                        2,
+                        13
+                    ]
+                ]
+            },
+            "language": "en",
+            "page": "173-192",
+            "title": "Events, narrative and data: why new chronologies or ethically Bayesian approaches should change how we write archaeology",
+            "title-short": "Events, narrative and data",
+            "type": "article-journal",
+            "volume": "23"
+        },
+        {
+            "author": [
+                {
+                    "family": "Marsh",
+                    "given": "Erik J"
+                },
+                {
+                    "family": "Bruno",
+                    "given": "Maria C"
+                },
+                {
+                    "family": "Fritz",
+                    "given": "Sherilyn C"
+                },
+                {
+                    "family": "Baker",
+                    "given": "Paul"
+                },
+                {
+                    "family": "Capriles",
+                    "given": "José M"
+                },
+                {
+                    "family": "Hastorf",
+                    "given": "Christine A"
+                }
+            ],
+            "container-title": "Radiocarbon",
+            "id": "marsh2018a",
+            "issue": "3",
+            "issued": {
+                "date-parts": [
+                    [
+                        2018
+                    ]
+                ]
+            },
+            "page": "925-940",
+            "title": "IntCal, SHCal, or a mixed curve? Choosing a 14C calibration curve for archaeological and paleoenvironmental records from tropical south america",
+            "type": "article-journal",
+            "volume": "60"
+        },
+        {
+            "DOI": "10.1016/j.quaint.2025.109957",
+            "URL": "http://dx.doi.org/10.1016/j.quaint.2025.109957",
+            "author": [
+                {
+                    "family": "Contreras",
+                    "given": "Daniel A."
+                },
+                {
+                    "family": "Marsh",
+                    "given": "Erik J."
+                },
+                {
+                    "family": "Rademaker",
+                    "given": "Kurt"
+                }
+            ],
+            "container-title": "Quaternary International",
+            "id": "contreras2025",
+            "issued": {
+                "date-parts": [
+                    [
+                        2025,
+                        10
+                    ]
+                ]
+            },
+            "language": "en",
+            "page": "109957",
+            "title": "Leveraging radiocarbon in the Central Andes: From chronologies to research agendas",
+            "title-short": "Leveraging radiocarbon in the Central Andes",
+            "type": "article-journal",
+            "volume": "746"
+        },
+        {
+            "DOI": "10.1016/j.jas.2015.02.019",
+            "URL": "http://dx.doi.org/10.1016/j.jas.2015.02.019",
+            "author": [
+                {
+                    "family": "Wood",
+                    "given": "Rachel"
+                }
+            ],
+            "container-title": "Journal of Archaeological Science",
+            "id": "wood2015",
+            "issued": {
+                "date-parts": [
+                    [
+                        2015,
+                        4
+                    ]
+                ]
+            },
+            "language": "en",
+            "page": "61-72",
+            "title": "From revolution to convention: the past, present and future of radiocarbon dating",
+            "title-short": "From revolution to convention",
+            "type": "article-journal",
+            "volume": "56"
+        },
+        {
+            "author": [
+                {
+                    "family": "Millard",
+                    "given": "Andrew R"
+                }
+            ],
+            "container-title": "Radiocarbon",
+            "id": "millard2014",
+            "issue": "2",
+            "issued": {
+                "date-parts": [
+                    [
+                        2014
+                    ]
+                ]
+            },
+            "page": "555559",
+            "title": "Conventions for reporting radiocarbon determinations",
+            "type": "article-journal",
+            "volume": "56"
+        },
+        {
+            "author": [
+                {
+                    "family": "Shimada",
+                    "given": "Izumi"
+                },
+                {
+                    "family": "Montenegro",
+                    "given": "Jorge"
+                }
+            ],
+            "id": "shimada1995",
+            "issued": {
+                "date-parts": [
+                    [
+                        1995
+                    ]
+                ]
+            },
+            "publisher": "Fundación del Banco Continental para el Fomento de la Educación y la Cultura",
+            "publisher-place": "Lima",
+            "title": "Cultura sicán: Dios, riqueza y poder en la costa norte del perú",
+            "title-short": "Cultura sicán",
+            "type": "book"
+        },
+        {
+            "author": [
+                {
+                    "family": "Bayliss",
+                    "given": "Alex"
+                },
+                {
+                    "family": "McCormac",
+                    "given": "Gerry"
+                },
+                {
+                    "dropping-particle": "van der",
+                    "family": "Plicht",
+                    "given": "Hans"
+                }
+            ],
+            "container-title": "Physics Education",
+            "id": "bayliss2004",
+            "issue": "2",
+            "issued": {
+                "date-parts": [
+                    [
+                        2004
+                    ]
+                ]
+            },
+            "page": "137144",
+            "title": "An illustrated guide to measuring radiocarbon from archaeological samples",
+            "type": "article-journal",
+            "volume": "39"
+        },
+        {
+            "author": [
+                {
+                    "family": "Velarde",
+                    "given": "Leonid"
+                }
+            ],
+            "container-title": "Arqueología y sociedad",
+            "id": "velarde1998",
+            "issue": "12",
+            "issued": {
+                "date-parts": [
+                    [
+                        1998
+                    ]
+                ]
+            },
+            "page": "1128",
+            "title": "Problemática de los fechados carbono 14 y su calibración: El caso del formativo de los andes centrales",
+            "title-short": "Problemática de los fechados carbono 14 y su calibración",
+            "type": "article-journal"
+        },
+        {
+            "DOI": "10.1017/rdc.2020.41",
+            "URL": "http://dx.doi.org/10.1017/RDC.2020.41",
+            "author": [
+                {
+                    "family": "Reimer",
+                    "given": "Paula J"
+                },
+                {
+                    "family": "Austin",
+                    "given": "William E N"
+                },
+                {
+                    "family": "Bard",
+                    "given": "Edouard"
+                },
+                {
+                    "family": "Bayliss",
+                    "given": "Alex"
+                },
+                {
+                    "family": "Blackwell",
+                    "given": "Paul G"
+                },
+                {
+                    "family": "Bronk Ramsey",
+                    "given": "Christopher"
+                },
+                {
+                    "family": "Butzin",
+                    "given": "Martin"
+                },
+                {
+                    "family": "Cheng",
+                    "given": "Hai"
+                },
+                {
+                    "family": "Edwards",
+                    "given": "R Lawrence"
+                },
+                {
+                    "family": "Friedrich",
+                    "given": "Michael"
+                },
+                {
+                    "family": "Grootes",
+                    "given": "Pieter M"
+                },
+                {
+                    "family": "Guilderson",
+                    "given": "Thomas P"
+                },
+                {
+                    "family": "Hajdas",
+                    "given": "Irka"
+                },
+                {
+                    "family": "Heaton",
+                    "given": "Timothy J"
+                },
+                {
+                    "family": "Hogg",
+                    "given": "Alan G"
+                },
+                {
+                    "family": "Hughen",
+                    "given": "Konrad A"
+                },
+                {
+                    "family": "Kromer",
+                    "given": "Bernd"
+                },
+                {
+                    "family": "Manning",
+                    "given": "Sturt W"
+                },
+                {
+                    "family": "Muscheler",
+                    "given": "Raimund"
+                },
+                {
+                    "family": "Palmer",
+                    "given": "Jonathan G"
+                },
+                {
+                    "family": "Pearson",
+                    "given": "Charlotte"
+                },
+                {
+                    "dropping-particle": "van der",
+                    "family": "Plicht",
+                    "given": "Johannes"
+                },
+                {
+                    "family": "Reimer",
+                    "given": "Ron W"
+                },
+                {
+                    "family": "Richards",
+                    "given": "David A"
+                },
+                {
+                    "family": "Scott",
+                    "given": "E Marian"
+                },
+                {
+                    "family": "Southon",
+                    "given": "John R"
+                },
+                {
+                    "family": "Turney",
+                    "given": "Christian S M"
+                },
+                {
+                    "family": "Wacker",
+                    "given": "Lukas"
+                },
+                {
+                    "family": "Adolphi",
+                    "given": "Florian"
+                },
+                {
+                    "family": "Büntgen",
+                    "given": "Ulf"
+                },
+                {
+                    "family": "Capano",
+                    "given": "Manuela"
+                },
+                {
+                    "family": "Fahrni",
+                    "given": "Simon M"
+                },
+                {
+                    "family": "Fogtmann-Schulz",
+                    "given": "Alexandra"
+                },
+                {
+                    "family": "Friedrich",
+                    "given": "Ronny"
+                },
+                {
+                    "family": "Köhler",
+                    "given": "Peter"
+                },
+                {
+                    "family": "Kudsk",
+                    "given": "Sabrina"
+                },
+                {
+                    "family": "Miyake",
+                    "given": "Fusa"
+                },
+                {
+                    "family": "Olsen",
+                    "given": "Jesper"
+                },
+                {
+                    "family": "Reinig",
+                    "given": "Frederick"
+                },
+                {
+                    "family": "Sakamoto",
+                    "given": "Minoru"
+                },
+                {
+                    "family": "Sookdeo",
+                    "given": "Adam"
+                },
+                {
+                    "family": "Talamo",
+                    "given": "Sahra"
+                }
+            ],
+            "container-title": "Radiocarbon",
+            "id": "reimer2020",
+            "issue": "4",
+            "issued": {
+                "date-parts": [
+                    [
+                        2020,
+                        8
+                    ]
+                ]
+            },
+            "language": "en",
+            "page": "725-757",
+            "title": "The IntCal20 Northern Hemisphere Radiocarbon Age Calibration Curve (055 cal kBP)",
+            "type": "article-journal",
+            "volume": "62"
+        },
+        {
+            "author": [
+                {
+                    "family": "Hogg",
+                    "given": "Alan G"
+                },
+                {
+                    "family": "Heaton",
+                    "given": "Timothy J"
+                },
+                {
+                    "family": "Hua",
+                    "given": "Quan"
+                },
+                {
+                    "family": "Palmer",
+                    "given": "Jonathan G"
+                },
+                {
+                    "family": "Turney",
+                    "given": "Chris SM"
+                },
+                {
+                    "family": "Southon",
+                    "given": "John"
+                },
+                {
+                    "family": "Bayliss",
+                    "given": "Alex"
+                },
+                {
+                    "family": "Blackwell",
+                    "given": "Paul G"
+                },
+                {
+                    "family": "Boswijk",
+                    "given": "Gretel"
+                },
+                {
+                    "family": "Ramsey",
+                    "given": "Christopher Bronk"
+                },
+                {
+                    "family": "others"
+                }
+            ],
+            "container-title": "Radiocarbon",
+            "id": "hogg2020",
+            "issue": "4",
+            "issued": {
+                "date-parts": [
+                    [
+                        2020
+                    ]
+                ]
+            },
+            "page": "759778",
+            "title": "SHCal20 southern hemisphere calibration, 055,000 years cal BP",
+            "type": "article-journal",
+            "volume": "62"
+        },
+        {
+            "author": [
+                {
+                    "family": "Price",
+                    "given": "Michael"
+                }
+            ],
+            "container-title": "Science",
+            "id": "price2023",
+            "issue": "6641",
+            "issued": {
+                "date-parts": [
+                    [
+                        2023
+                    ]
+                ]
+            },
+            "page": "1248",
+            "title": "Marking time",
+            "type": "article-journal",
+            "volume": "380"
+        },
+        {
+            "DOI": "10.1098/rspa.2016.0263",
+            "URL": "https://doi.org/10.1098/rspa.2016.0263",
+            "author": [
+                {
+                    "family": "Dee",
+                    "given": "Michael W."
+                },
+                {
+                    "family": "Pope",
+                    "given": "Benjamin J. S."
+                }
+            ],
+            "container-title": "Proceedings of the Royal Society A: Mathematical, Physical and Engineering Sciences",
+            "id": "dee2016",
+            "issue": "2192",
+            "issued": {
+                "date-parts": [
+                    [
+                        2016,
+                        8,
+                        31
+                    ]
+                ]
+            },
+            "page": "20160263",
+            "title": "Anchoring historical sequences using a new source of astro-chronological tie-points",
+            "type": "article-journal",
+            "volume": "472"
+        },
+        {
+            "URL": "https://CRAN.R-project.org/package=Bchron",
+            "author": [
+                {
+                    "family": "Parnell",
+                    "given": "Andrew"
+                }
+            ],
+            "id": "parnell2015",
+            "issued": {
+                "date-parts": [
+                    [
+                        2015
+                    ]
+                ]
+            },
+            "title": "Bchron: Radiocarbon dating, age-depth modelling, relative sea level rate estimation, and non-parametric phase modelling",
+            "title-short": "Bchron",
+            "type": "book"
+        },
+        {
+            "author": [
+                {
+                    "family": "Blaauw",
+                    "given": "Maarten"
+                }
+            ],
+            "id": "blaauw2021",
+            "issued": {
+                "date-parts": [
+                    [
+                        2021
+                    ]
+                ]
+            },
+            "title": "Package ‘IntCal’",
+            "type": "article-journal"
+        },
+        {
+            "URL": "https://CRAN.R-project.org/package=rintcal",
+            "author": [
+                {
+                    "family": "Blaauw",
+                    "given": "Maarten"
+                }
+            ],
+            "id": "blaauw2025",
+            "issued": {
+                "date-parts": [
+                    [
+                        2025
+                    ]
+                ]
+            },
+            "title": "Rintcal: Radiocarbon calibration curves",
+            "title-short": "Rintcal",
+            "type": "book"
+        },
+        {
+            "URL": "https://CRAN.R-project.org/package=rice",
+            "author": [
+                {
+                    "family": "Blaauw",
+                    "given": "Maarten"
+                }
+            ],
+            "id": "blaauw2024",
+            "issued": {
+                "date-parts": [
+                    [
+                        2024
+                    ]
+                ]
+            },
+            "title": "Rice: Radiocarbon equations",
+            "title-short": "Rice",
+            "type": "book"
+        },
+        {
+            "DOI": "10.32614/cran.package.rcarbon",
+            "URL": "http://dx.doi.org/10.32614/CRAN.package.rcarbon",
+            "author": [
+                {
+                    "family": "Bevan",
+                    "given": "Andrew"
+                },
+                {
+                    "family": "Crema",
+                    "given": "Enrico"
+                }
+            ],
+            "id": "bevan2017",
+            "issued": {
+                "date-parts": [
+                    [
+                        2017,
+                        10,
+                        9
+                    ]
+                ]
+            },
+            "publisher": "The R Foundation",
+            "title": "Rcarbon: Calibration and analysis of radiocarbon dates",
+            "title-short": "Rcarbon",
+            "type": ""
+        },
+        {
+            "DOI": "10.5281/ZENODO.8087121",
+            "URL": "https://zenodo.org/doi/10.5281/zenodo.8087121",
+            "author": [
+                {
+                    "family": "Philippe",
+                    "given": "Anne"
+                },
+                {
+                    "family": "Vibet",
+                    "given": "Marie-Anne"
+                },
+                {
+                    "family": "Frerebeau",
+                    "given": "Nicolas"
+                }
+            ],
+            "id": "philippe2024",
+            "issued": {
+                "date-parts": [
+                    [
+                        2024,
+                        11,
+                        5
+                    ]
+                ]
+            },
+            "language": "en",
+            "publisher": "Zenodo",
+            "title": "ArchaeoPhases: Post-Processing of Markov Chain Monte Carlo Simulations for Chronological Modelling",
+            "title-short": "ArchaeoPhases",
+            "type": "book"
+        },
+        {
+            "DOI": "10.21105/joss.01914",
+            "URL": "https://doi.org/10.21105/joss.01914",
+            "author": [
+                {
+                    "family": "Schmid",
+                    "given": "Clemens"
+                },
+                {
+                    "family": "Seidensticker",
+                    "given": "Dirk"
+                },
+                {
+                    "family": "Hinz",
+                    "given": "Martin"
+                }
+            ],
+            "container-title": "Journal of Open Source Software",
+            "id": "schmid2019",
+            "issue": "43",
+            "issued": {
+                "date-parts": [
+                    [
+                        2019,
+                        11
+                    ]
+                ]
+            },
+            "page": "1914",
+            "title": "c14bazAAR: An r package for downloading and preparing C14 dates from different source databases",
+            "title-short": "c14bazAAR",
+            "type": "article-journal",
+            "volume": "4"
+        },
+        {
+            "URL": "https://www.cambridge.org/core/journals/radiocarbon/article/atmospheric-radiocarbon-for-the-period-19502019/28F8E4DD4BA3F32266541445EC3F64C8",
+            "author": [
+                {
+                    "family": "Hua",
+                    "given": "Quan"
+                },
+                {
+                    "family": "Turnbull",
+                    "given": "Jocelyn C."
+                },
+                {
+                    "family": "Santos",
+                    "given": "Guaciara M."
+                },
+                {
+                    "family": "Rakowski",
+                    "given": "Andrzej Z."
+                },
+                {
+                    "family": "Ancapichún",
+                    "given": "Santiago"
+                },
+                {
+                    "family": "De Pol-Holz",
+                    "given": "Ricardo"
+                },
+                {
+                    "family": "Hammer",
+                    "given": "Samuel"
+                },
+                {
+                    "family": "Lehman",
+                    "given": "Scott J."
+                },
+                {
+                    "family": "Levin",
+                    "given": "Ingeborg"
+                },
+                {
+                    "family": "Miller",
+                    "given": "John B."
+                }
+            ],
+            "container-title": "Radiocarbon",
+            "id": "hua2022",
+            "issue": "4",
+            "issued": {
+                "date-parts": [
+                    [
+                        2022
+                    ]
+                ]
+            },
+            "page": "723745",
+            "title": "Atmospheric radiocarbon for the period 19502019",
+            "type": "article-journal",
+            "volume": "64"
+        },
+        {
+            "DOI": "10.1016/j.epsl.2013.12.043",
+            "URL": "http://dx.doi.org/10.1016/j.epsl.2013.12.043",
+            "author": [
+                {
+                    "family": "McGee",
+                    "given": "David"
+                },
+                {
+                    "family": "Donohoe",
+                    "given": "Aaron"
+                },
+                {
+                    "family": "Marshall",
+                    "given": "John"
+                },
+                {
+                    "family": "Ferreira",
+                    "given": "David"
+                }
+            ],
+            "container-title": "Earth and Planetary Science Letters",
+            "id": "mcgee2014",
+            "issued": {
+                "date-parts": [
+                    [
+                        2014,
+                        3
+                    ]
+                ]
+            },
+            "language": "en",
+            "page": "69-79",
+            "title": "Changes in ITCZ location and cross-equatorial heat transport at the Last Glacial Maximum, Heinrich Stadial 1, and the mid-Holocene",
+            "type": "article-journal",
+            "volume": "390"
+        },
+        {
+            "author": [
+                {
+                    "family": "Bronk Ramsey",
+                    "given": "Christopher"
+                }
+            ],
+            "container-title": "Radiocarbon",
+            "id": "bronkramsey1998",
+            "issue": "1",
+            "issued": {
+                "date-parts": [
+                    [
+                        1998
+                    ]
+                ]
+            },
+            "page": "114",
+            "title": "Probability and dating",
+            "type": "article-journal",
+            "volume": "40"
+        },
+        {
+            "author": [
+                {
+                    "family": "Bronk Ramsey",
+                    "given": "Christopher"
+                }
+            ],
+            "container-title": "Radiocarbon",
+            "id": "bronkramsey2017a",
+            "issue": "6",
+            "issued": {
+                "date-parts": [
+                    [
+                        2017
+                    ]
+                ]
+            },
+            "page": "1809-1833",
+            "title": "Methods for summarizing radiocarbon datasets",
+            "type": "article-journal",
+            "volume": "59"
+        },
+        {
+            "URL": "https://www.cambridge.org/core/journals/radiocarbon/article/marine20the-marine-radiocarbon-age-calibration-curve-055000-cal-bp/B3013899914A3198D4B884B7B6E5CE66",
+            "author": [
+                {
+                    "family": "Heaton",
+                    "given": "Timothy J."
+                },
+                {
+                    "family": "Köhler",
+                    "given": "Peter"
+                },
+                {
+                    "family": "Butzin",
+                    "given": "Martin"
+                },
+                {
+                    "family": "Bard",
+                    "given": "Edouard"
+                },
+                {
+                    "family": "Reimer",
+                    "given": "Ron W."
+                },
+                {
+                    "family": "Austin",
+                    "given": "William EN"
+                },
+                {
+                    "family": "Ramsey",
+                    "given": "Christopher Bronk"
+                },
+                {
+                    "family": "Grootes",
+                    "given": "Pieter M."
+                },
+                {
+                    "family": "Hughen",
+                    "given": "Konrad A."
+                },
+                {
+                    "family": "Kromer",
+                    "given": "Bernd"
+                }
+            ],
+            "container-title": "Radiocarbon",
+            "id": "heaton2020",
+            "issue": "4",
+            "issued": {
+                "date-parts": [
+                    [
+                        2020
+                    ]
+                ]
+            },
+            "page": "779820",
+            "title": "Marine20the marine radiocarbon age calibration curve (055,000 cal BP)",
+            "type": "article-journal",
+            "volume": "62"
+        },
+        {
+            "author": [
+                {
+                    "family": "Osborn",
+                    "given": "Jo"
+                },
+                {
+                    "family": "Hundman",
+                    "given": "Brittany"
+                },
+                {
+                    "family": "Weinberg",
+                    "given": "Camille"
+                },
+                {
+                    "family": "Espino Huaman",
+                    "given": "Richard"
+                }
+            ],
+            "container-title": "radiocarbon. an international journal of cosmogenic isotope research",
+            "id": "osborn2023",
+            "issued": {
+                "date-parts": [
+                    [
+                        2023
+                    ]
+                ]
+            },
+            "page": "123",
+            "title": "Reassessing the chronology of topará emergence and paracas decline on the peruvian south coast: A bayesian approach",
+            "title-short": "Reassessing the chronology of topará emergence and paracas decline on the peruvian south coast",
+            "type": "article-journal"
+        },
+        {
+            "author": [
+                {
+                    "family": "Marsh",
+                    "given": "Erik J."
+                },
+                {
+                    "family": "Roddick",
+                    "given": "Andrew P."
+                },
+                {
+                    "family": "Bruno",
+                    "given": "Maria C."
+                },
+                {
+                    "family": "Smith",
+                    "given": "Scott C."
+                },
+                {
+                    "family": "Janusek",
+                    "given": "John W."
+                },
+                {
+                    "family": "Hastorf",
+                    "given": "Christine A."
+                }
+            ],
+            "container-title": "Latin American Antiquity",
+            "id": "marsh2019",
+            "issue": "4",
+            "issued": {
+                "date-parts": [
+                    [
+                        2019
+                    ]
+                ]
+            },
+            "page": "798817",
+            "title": "Temporal inflection points in decorated pottery: A bayesian refinement of the late formative chronology in the southern lake titicaca basin, bolivia",
+            "title-short": "Temporal inflection points in decorated pottery",
+            "type": "article-journal",
+            "volume": "30"
+        },
+        {
+            "author": [
+                {
+                    "family": "Holland-Lulewicz",
+                    "given": "Jacob"
+                },
+                {
+                    "family": "Ritchison",
+                    "given": "Brandon T."
+                }
+            ],
+            "container-title": "Advances in Archaeological Practice",
+            "id": "holland-lulewicz2021",
+            "issue": "4",
+            "issued": {
+                "date-parts": [
+                    [
+                        2021
+                    ]
+                ]
+            },
+            "page": "272287",
+            "title": "How many dates do i need? Using simulations to determine robust age estimations of archaeological contexts",
+            "type": "article-journal",
+            "volume": "9"
+        },
+        {
+            "author": [
+                {
+                    "family": "Reimer",
+                    "given": "Paula J"
+                },
+                {
+                    "family": "Reimer",
+                    "given": "Ron W"
+                }
+            ],
+            "container-title": "radiocarbon. an international journal of cosmogenic isotope research",
+            "id": "reimer2001marine",
+            "issue": "2A",
+            "issued": {
+                "date-parts": [
+                    [
+                        2001
+                    ]
+                ]
+            },
+            "note": "Citation Key: reimer2001marine",
+            "page": "461463",
+            "title": "A marine reservoir correction database and on-line interface",
+            "type": "article-journal",
+            "volume": "43"
+        },
+        {
+            "DOI": "10.1017/s0033822200046282",
+            "URL": "http://dx.doi.org/10.1017/S0033822200046282",
+            "author": [
+                {
+                    "family": "Jones",
+                    "given": "Kevin B"
+                },
+                {
+                    "family": "Hodgins",
+                    "given": "Gregory W L"
+                },
+                {
+                    "family": "Etayo-Cadavid",
+                    "given": "Miguel F"
+                },
+                {
+                    "family": "Andrus",
+                    "given": "C Fred T"
+                },
+                {
+                    "family": "Sandweiss",
+                    "given": "Daniel H"
+                }
+            ],
+            "container-title": "Radiocarbon",
+            "id": "jones2010",
+            "issue": "3",
+            "issued": {
+                "date-parts": [
+                    [
+                        2010
+                    ]
+                ]
+            },
+            "language": "en",
+            "page": "1207-1214",
+            "title": "Centuries of Marine Radiocarbon Reservoir Age Variation Within Archaeological <i>Mesodesma Donacium</i> Shells from Southern Peru",
+            "type": "article-journal",
+            "volume": "52"
+        },
+        {
+            "DOI": "10.1017/9781139013826.006",
+            "URL": "https://www.cambridge.org/core/books/archaeological-science/isotope-analysis-for-diet-studies/16A8C8460DD9845D0DB4B15344FF712A",
+            "author": [
+                {
+                    "family": "Richards",
+                    "given": "Michael P."
+                }
+            ],
+            "editor": [
+                {
+                    "family": "Britton",
+                    "given": "Kate"
+                },
+                {
+                    "family": "Richards",
+                    "given": "Michael P."
+                }
+            ],
+            "id": "richards2020",
+            "issued": {
+                "date-parts": [
+                    [
+                        2020
+                    ]
+                ]
+            },
+            "page": "125-144",
+            "publisher": "Cambridge University Press",
+            "publisher-place": "Cambridge",
+            "title": "Isotope analysis for diet studies",
+            "type": "chapter"
+        },
+        {
+            "URL": "https://CRAN.R-project.org/package=simmr",
+            "author": [
+                {
+                    "family": "Govan",
+                    "given": "Emma"
+                },
+                {
+                    "family": "Parnell",
+                    "given": "Andrew"
+                }
+            ],
+            "id": "govan2024",
+            "issued": {
+                "date-parts": [
+                    [
+                        2024
+                    ]
+                ]
+            },
+            "title": "Simmr: A stable isotope mixing model",
+            "title-short": "Simmr",
+            "type": "report"
+        },
+        {
+            "URL": "https://doi.org/10.7717/peerj.5096",
+            "author": [
+                {
+                    "family": "Stock",
+                    "given": "Brian C."
+                },
+                {
+                    "family": "Jackson",
+                    "given": "Andrew L."
+                },
+                {
+                    "family": "Ward",
+                    "given": "Eric J."
+                },
+                {
+                    "family": "Parnell",
+                    "given": "Andrew C."
+                },
+                {
+                    "family": "Phillips",
+                    "given": "Donald L."
+                },
+                {
+                    "family": "Semmens",
+                    "given": "Brice X."
+                }
+            ],
+            "container-title": "PeerJ",
+            "id": "stock2018",
+            "issued": {
+                "date-parts": [
+                    [
+                        2018
+                    ]
+                ]
+            },
+            "page": "e5096",
+            "title": "Analyzing mixing systems using a new generation of bayesian tracer mixing models",
+            "type": "article-journal",
+            "volume": "6"
+        },
+        {
+            "author": [
+                {
+                    "family": "Spriggs",
+                    "given": "Matthew"
+                }
+            ],
+            "container-title": "Antiquity",
+            "id": "spriggs1989",
+            "issue": "240",
+            "issued": {
+                "date-parts": [
+                    [
+                        1989
+                    ]
+                ]
+            },
+            "page": "587-613",
+            "title": "The dating of the island southeast asian neolithic: An attempt at chronometric hygiene and linguistic correlation",
+            "title-short": "The dating of the island southeast asian neolithic",
+            "type": "article-journal",
+            "volume": "63"
+        },
+        {
+            "DOI": "10.1080/00934690.2024.2391623",
+            "URL": "http://dx.doi.org/10.1080/00934690.2024.2391623",
+            "author": [
+                {
+                    "family": "Farahani",
+                    "given": "Alan"
+                }
+            ],
+            "container-title": "Journal of Field Archaeology",
+            "id": "farahani2024",
+            "issue": "6",
+            "issued": {
+                "date-parts": [
+                    [
+                        2024,
+                        8,
+                        17
+                    ]
+                ]
+            },
+            "language": "en",
+            "page": "391-394",
+            "title": "Reproducibility and Archaeological Practice in the <i>Journal of Field Archaeology</i>",
+            "type": "article-journal",
+            "volume": "49"
+        },
+        {
+            "DOI": "10.1017/aap.2022.40",
+            "URL": "http://dx.doi.org/10.1017/aap.2022.40",
+            "author": [
+                {
+                    "family": "Nicholson",
+                    "given": "Christopher"
+                },
+                {
+                    "family": "Kansa",
+                    "given": "Sarah"
+                },
+                {
+                    "family": "Gupta",
+                    "given": "Neha"
+                },
+                {
+                    "family": "Fernandez",
+                    "given": "Rachel"
+                }
+            ],
+            "container-title": "Advances in Archaeological Practice",
+            "id": "nicholson2023",
+            "issue": "1",
+            "issued": {
+                "date-parts": [
+                    [
+                        2023,
+                        2
+                    ]
+                ]
+            },
+            "language": "en",
+            "page": "63-75",
+            "title": "Will It Ever Be FAIR?",
+            "type": "article-journal",
+            "volume": "11"
+        },
+        {
+            "DOI": "10.1007/s10816-015-9272-9",
+            "URL": "http://dx.doi.org/10.1007/s10816-015-9272-9",
+            "author": [
+                {
+                    "family": "Marwick",
+                    "given": "Ben"
+                }
+            ],
+            "container-title": "Journal of Archaeological Method and Theory",
+            "id": "marwick2016",
+            "issue": "2",
+            "issued": {
+                "date-parts": [
+                    [
+                        2016,
+                        1,
+                        7
+                    ]
+                ]
+            },
+            "language": "en",
+            "page": "424-450",
+            "title": "Computational Reproducibility in Archaeological Research: Basic Principles and a Case Study of Their Implementation",
+            "title-short": "Computational Reproducibility in Archaeological Research",
+            "type": "article-journal",
+            "volume": "24"
+        },
+        {
+            "DOI": "10.2458/azu_js_rc.v51i3.3561",
+            "URL": "https://journals.uair.arizona.edu/index.php/radiocarbon/article/view/3561",
+            "author": [
+                {
+                    "family": "Bronk Ramsey",
+                    "given": "Christopher"
+                }
+            ],
+            "container-title": "Radiocarbon",
+            "id": "bronkramsey2009",
+            "issue": "3",
+            "issued": {
+                "date-parts": [
+                    [
+                        2009
+                    ]
+                ]
+            },
+            "note": "The wide availability of precise radiocarbon dates has allowed researchers in a number of disciplines to address chronological questions at a resolution which was not possible 10 or 20 years ago. The use of Bayesian statistics for the analysis of groups of dates is becoming a common way to integrate all of the 14C evidence together. However, the models most often used make a number of assumptions that may not always be appropriate. In particular, there is an assumption that all of the 14C measurements are correct in their context and that the original 14C concentration of the sample is properly represented by the calibration curve. In practice, in any analysis of dates some are usually rejected as obvious outliers. However, there are Bayesian statistical methods which can be used to perform this rejection in a more objective way (Christen 1994b), but these are not often used. This paper discusses the underlying statistics and application of these methods, and extensions of them, as they are implemented in OxCal v 4.1. New methods are presented for the treatment of outliers, where the problems lie principally with the context rather than the 14C measurement. There is also a full treatment of outlier analysis for samples that are all of the same age, which takes account of the uncertainty in the calibration curve. All of these Bayesian approaches can be used either for outlier detection and rejection or in a model averaging approach where dates most likely to be outliers are downweighted. Another important subject is the consistent treatment of correlated uncertainties between a set of measurements and the calibration curve. This has already been discussed by Jones and Nicholls (2001) in the case of marine reservoir offsets. In this paper, the use of a similar approach for other kinds of correlated offset (such as overall measurement bias or regional offsets in the calibration curve) is discussed and the implementation of these methods in OxCal v 4.0 is presented.",
+            "page": "1023-1045",
+            "title": "Dealing with outliers and offsets in radiocarbon dating",
+            "type": "article-journal",
+            "volume": "51"
+        },
+        {
+            "author": [
+                {
+                    "family": "Whittle",
+                    "given": "Alasdair"
+                },
+                {
+                    "family": "Bayliss",
+                    "given": "Alex"
+                }
+            ],
+            "container-title": "Cambridge Archaeological Journal",
+            "id": "whittle2007",
+            "issue": "1",
+            "issued": {
+                "date-parts": [
+                    [
+                        2007
+                    ]
+                ]
+            },
+            "page": "2128",
+            "title": "The times of their lives: From chronological precision to kinds of history and change",
+            "title-short": "The times of their lives",
+            "type": "article-journal",
+            "volume": "17"
+        },
+        {
+            "author": [
+                {
+                    "family": "Bayliss",
+                    "given": "Alex"
+                },
+                {
+                    "family": "Whittle",
+                    "given": "Alasdair"
+                }
+            ],
+            "editor": [
+                {
+                    "family": "Souvatzi",
+                    "given": "Stella"
+                },
+                {
+                    "family": "Baysal",
+                    "given": "Adnan"
+                },
+                {
+                    "family": "Baysal",
+                    "given": "Emma L"
+                }
+            ],
+            "id": "bayliss2018a",
+            "issued": {
+                "date-parts": [
+                    [
+                        2018
+                    ]
+                ]
+            },
+            "page": "123-146",
+            "publisher": "Routledge",
+            "title": "What kind of history in prehistory",
+            "type": "chapter"
+        },
+        {
+            "author": [
+                {
+                    "family": "Griffiths",
+                    "given": "Seren"
+                }
+            ],
+            "container-title": "Radiocarbon",
+            "id": "griffiths2017",
+            "issue": "5",
+            "issued": {
+                "date-parts": [
+                    [
+                        2017
+                    ]
+                ]
+            },
+            "page": "13471357",
+            "title": "We’re all cultural historians now: Revolutions in understanding archaeological theory and scientific dating",
+            "title-short": "We’re all cultural historians now",
+            "type": "article-journal",
+            "volume": "59"
+        },
+        {
+            "author": [
+                {
+                    "family": "Manning",
+                    "given": "SW"
+                },
+                {
+                    "family": "Wacker",
+                    "given": "L"
+                },
+                {
+                    "family": "Büntgen",
+                    "given": "U"
+                },
+                {
+                    "family": "Bronk Ramsey",
+                    "given": "C"
+                },
+                {
+                    "family": "Dee",
+                    "given": "MW"
+                },
+                {
+                    "family": "Kromer",
+                    "given": "B"
+                },
+                {
+                    "family": "Lorentzen",
+                    "given": "B"
+                },
+                {
+                    "family": "Tegel",
+                    "given": "W"
+                }
+            ],
+            "container-title": "Sci Rep",
+            "id": "manning2020",
+            "issue": "1",
+            "issued": {
+                "date-parts": [
+                    [
+                        2020
+                    ]
+                ]
+            },
+            "note": "Place: Cornell Tree Ring Laboratory, Department of Classics, Cornell University, Ithaca, NY, 14853, USA. sm456@cornell.edu. Laboratory for Ion Beam Physics, Swiss Federal Institute of Technology in Zurich, 8093, Zurich, Switzerland. Department of Geography, University of Cambridge, Cambridge, CB2 3EN, UK. Swiss Federal Research Institute WSL, 8903, Birmensdorf, Switzerland. Global Change Research Institute CAS, 603 00, Brno, Czech Republic. Department of Geography, Faculty of Science, Masaryk University, 611 37, Brno, Czech Republic. Research Laboratory for Archaeology, School of Archaeology, University of Oxford, Oxford, OX1 3TG, UK. Centre for Isotope Research, Faculty of Science and Engineering, University of Groningen, Nijenborgh 6, 9747 AG, Groningen, The Netherlands. Institute of Environmental Physics, University of Heidelberg, 69120, Heidelberg, Germany. Cornell Tree Ring Laboratory, Department of Classics, Cornell University, Ithaca, NY, 14853, USA. Chair of Forest Growth and Dendroecology, Institute of Forest Sciences, University of Freiburg, Freiburg, Germany. Archaeological Service Kanton Thurgau (AATG), 8510, Frauenfeld, Switzerland.",
+            "page": "13785",
+            "title": "Radiocarbon offsets and old world chronology as relevant to mesopotamia, egypt, anatolia and thera (santorini)",
+            "type": "article-journal",
+            "volume": "10"
+        },
+        {
+            "DOI": "10.4324/9780203645307",
+            "URL": "http://dx.doi.org/10.4324/9780203645307",
+            "author": [
+                {
+                    "family": "Hodder",
+                    "given": "Ian"
+                }
+            ],
+            "id": "hodder1995",
+            "issued": {
+                "date-parts": [
+                    [
+                        1995
+                    ]
+                ]
+            },
+            "language": "en",
+            "publisher": "Routledge",
+            "title": "Theory and Practice in Archaeology",
+            "type": "book"
+        },
+        {
+            "author": [
+                {
+                    "family": "Bayliss",
+                    "given": "Alex"
+                }
+            ],
+            "container-title": "Radiocarbon",
+            "id": "bayliss2009",
+            "issue": "1",
+            "issued": {
+                "date-parts": [
+                    [
+                        2009
+                    ]
+                ]
+            },
+            "page": "123147",
+            "title": "Rolling out revolution: Using radiocarbon dating in archaeology",
+            "title-short": "Rolling out revolution",
+            "type": "article-journal",
+            "volume": "51"
+        },
+        {
+            "author": [
+                {
+                    "family": "Blaauw",
+                    "given": "Maarten"
+                },
+                {
+                    "family": "Christen",
+                    "given": "J. Andrés"
+                },
+                {
+                    "family": "Bennett",
+                    "given": "K. D."
+                },
+                {
+                    "family": "Reimer",
+                    "given": "Paula J."
+                }
+            ],
+            "container-title": "Quaternary Science Reviews",
+            "id": "blaauw2018",
+            "issued": {
+                "date-parts": [
+                    [
+                        2018
+                    ]
+                ]
+            },
+            "page": "5866",
+            "title": "Double the dates and go for bayes  impacts of model choice, dating density and quality on chronologies",
+            "type": "article-journal",
+            "volume": "188"
+        },
+        {
+            "author": [
+                {
+                    "family": "Capriles",
+                    "given": "José M."
+                }
+            ],
+            "container-title": "Open Quaternary",
+            "id": "capriles2023",
+            "issued": {
+                "date-parts": [
+                    [
+                        2023
+                    ]
+                ]
+            },
+            "title": "A review of archaeological and paleoecological radiocarbon dating in bolivia",
+            "type": "article-journal",
+            "volume": "9"
+        }
+    ],
+    "project_biblios": []
+}

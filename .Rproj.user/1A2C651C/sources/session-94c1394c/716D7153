@@ -1,0 +1,27 @@
+{
+    "id": "716D7153",
+    "path": "~/UF Dropbox/Daniel Contreras/Teaching/radiocarbon_workshop/oxcalsimulate_cc.R",
+    "project_path": "oxcalsimulate_cc.R",
+    "type": "r_source",
+    "hash": "2637124481",
+    "contents": "",
+    "dirty": false,
+    "created": 1772274390078.0,
+    "source_on_save": false,
+    "relative_order": 3,
+    "properties": {
+        "tempName": "Untitled1",
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "3,26",
+        "scrollLine": "0"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1772434880,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1772434880870,
+    "read_only": false,
+    "read_only_alternatives": []
+}

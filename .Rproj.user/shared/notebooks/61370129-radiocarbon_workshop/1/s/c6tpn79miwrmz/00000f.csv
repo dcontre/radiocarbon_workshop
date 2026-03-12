@@ -1,0 +1,71 @@
+"0","
+#or simulate using oxcAAR
+setOxcalExecutablePath(""/Applications/OxCal/bin/OxCalMac"")
+oxcalCalibrate(5000,25,""KIA-12345"")
+"
+"1","
+=============================
+	R_Date: KIA-12345
+=============================
+
+
+BP = 5000, std = 25
+
+
+unmodelled:                    posterior:
+
+one sigma                      
+3890 BC - 3882 BC (4.84%)      
+3796 BC - 3754 BC (36.14%)     
+3745 BC - 3710 BC (27.29%)     
+
+two sigma                      
+3936 BC - 3872 BC (21.24%)     
+3805 BC - 3702 BC (70.36%)     
+3672 BC - 3656 BC (3.85%)      
+
+three sigma                    
+3946 BC - 3650 BC (99.73%)     
+
+Calibrated with:
+	 Atmospheric data from Reimer et al (2020)"
+"1"," "
+"1","
+"
+"0","oxcalSimulate(-3400, 25, ""SimDate_1"")"
+"1","
+=============================
+	R_Simulate: SimDate_1
+=============================
+
+
+BP = 4689, std = 25
+
+
+unmodelled:                    posterior:
+
+one sigma                      
+3514 BC - 3494 BC (16.77%)     
+3448 BC - 3444 BC (2.97%)      
+3438 BC - 3378 BC (48.52%)     
+
+two sigma                      
+3526 BC - 3370 BC (95.45%)     
+
+three sigma                    
+3624 BC - 3558 BC (3.21%)      
+3532 BC - 3365 BC (96.52%)     
+
+Calibrated with:
+	 Atmospheric data from Reimer et al (2020)"
+"1"," "
+"1","
+"
+"0","bur20_oxsim <- oxcalSimulate(bur20$ages, std = round(rnorm(20, mean = 30, sd = 5), 0), "
+"0","                           names = paste(""LabXX"", sprintf('%0.2d', 1:20), sep = ""-""))"
+"0","ages <- bind_rows(lapply(bur20_oxsim, '[[', 3)) %>% "
+"0","  pivot_longer(names_to = ""ID"", cols = everything(), values_to = ""c14age"")"
+"0",""
+"0","errors <- bind_rows(lapply(bur20_oxsim, '[[', 4)) %>% "
+"0","  pivot_longer(names_to = ""ID"", cols = everything(), values_to = ""c14std"")"
+"0","bur20_sim <- ages %>% left_join(errors) %>% mutate(calBP = bur20$ages)"

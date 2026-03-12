@@ -1,0 +1,5 @@
+"0","set.seed(42)"
+"0","bur20_low <- data.frame(ages = round(((runif(20, min = 800, max = 1100) + 19)/ 40)) * 40) "
+"0",""
+"0","bur20_low %>% kbl() %>% "
+"0","    kable_minimal(latex_options = ""basic"", full_width = F, position = ""float_right"", font_size = 7)"
