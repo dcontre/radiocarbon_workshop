@@ -1197,7 +1197,10 @@ A more immediate advantage is that Bayesian modeling forces us to explicitly art
 
 # Exercise 1
 
-To generate a basis for discussion for our second session, please explore this set (Table 6.1, and available in 'BurialSim2_sim.csv') of radiocarbon ages on 20 samples from 10 burials (thinking about the same cemetery that we explored above). Estimate the span of use of the cemetery. Assume a terrestrial diet for all individuals. Drop dates that you don't trust - but justify excluding them.
+To generate a basis for discussion for our second session, please explore this set (Table 6.1, and available in 'BurialSim2_sim.csv') of radiocarbon ages on 20 samples from 10 burials (thinking about the same cemetery that we explored above). Estimate the span of use of the cemetery. Assume a terrestrial diet for all individuals. Drop dates that you don't trust - but justify excluding them. 
+
+In short: apply chronometric hygiene, build a bounded phase model (or other model, if you think something else is more appropriate!), and account for offsets as you deem necessary. Then generate plot a KDE (and/or other pdfs, as you prefer), and estimate a span. Be prepared to justify your choices, but keep in mind that for our purposes right answers don't really matter - this exercise is intended to be exploratory.
+
 
 ```{r echo = F, warning = F, message = F}
 set.seed(42)
@@ -1293,7 +1296,6 @@ bur20_sim2_cql <- bur20_sim2 %>% group_by(burial) %>%
   cql() 
 ```
 
-apply: chronometric hygiene, phase model, boundaries, offsets generate: KDE, span right answers don't matter!
 
 # Exercise 2
 

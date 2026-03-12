@@ -222,6 +222,7 @@ div.csl-indent {
 <div id="exercise-1" class="section level1 hasAnchor" number="6">
 <h1><span class="header-section-number">6</span> Exercise 1<a href="exercise-1.html#exercise-1" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <p>To generate a basis for discussion for our second session, please explore this set (Table 6.1, and available in ‘BurialSim2_sim.csv’) of radiocarbon ages on 20 samples from 10 burials (thinking about the same cemetery that we explored above). Estimate the span of use of the cemetery. Assume a terrestrial diet for all individuals. Drop dates that you don’t trust - but justify excluding them.</p>
+<p>In short: apply chronometric hygiene, build a bounded phase model (or other model, if you think something else is more appropriate!), and account for offsets as you deem necessary. Then generate plot a KDE (and/or other pdfs, as you prefer), and estimate a span. Be prepared to justify your choices, but keep in mind that for our purposes right answers don’t really matter - this exercise is intended to be exploratory.</p>
 <table class=" lightable-classic" style="font-family: Cambria; width: auto !important; margin-left: auto; margin-right: auto;">
 <caption>
 <span id="tab:unnamed-chunk-37">Table 6.1: </span>Radiocarbon dates from Burial 11/92
@@ -257,7 +258,7 @@ gourd
 11/92
 </td>
 <td style="text-align:right;">
-911
+945
 </td>
 <td style="text-align:right;">
 29
@@ -274,7 +275,7 @@ human bone
 11/92
 </td>
 <td style="text-align:right;">
-951
+880
 </td>
 <td style="text-align:right;">
 21
@@ -291,7 +292,7 @@ human bone
 11/92
 </td>
 <td style="text-align:right;">
-922
+951
 </td>
 <td style="text-align:right;">
 32
@@ -308,7 +309,7 @@ textile
 11/92
 </td>
 <td style="text-align:right;">
-945
+972
 </td>
 <td style="text-align:right;">
 27
@@ -325,7 +326,7 @@ textile
 12/92
 </td>
 <td style="text-align:right;">
-975
+968
 </td>
 <td style="text-align:right;">
 32
@@ -342,7 +343,7 @@ charcoal
 13/92
 </td>
 <td style="text-align:right;">
-1401
+1431
 </td>
 <td style="text-align:right;">
 34
@@ -359,7 +360,7 @@ wood
 13/92
 </td>
 <td style="text-align:right;">
-1194
+1231
 </td>
 <td style="text-align:right;">
 35
@@ -376,7 +377,7 @@ charcoal
 14/92
 </td>
 <td style="text-align:right;">
-1157
+1212
 </td>
 <td style="text-align:right;">
 27
@@ -393,7 +394,7 @@ wood
 14/92
 </td>
 <td style="text-align:right;">
-1030
+1067
 </td>
 <td style="text-align:right;">
 33
@@ -410,7 +411,7 @@ wood
 14/92
 </td>
 <td style="text-align:right;">
-1645
+1612
 </td>
 <td style="text-align:right;">
 21
@@ -427,7 +428,7 @@ cane
 15/92
 </td>
 <td style="text-align:right;">
-1088
+1074
 </td>
 <td style="text-align:right;">
 26
@@ -444,7 +445,7 @@ human bone
 15/92
 </td>
 <td style="text-align:right;">
-1077
+1076
 </td>
 <td style="text-align:right;">
 26
@@ -461,7 +462,7 @@ human bone
 15/92
 </td>
 <td style="text-align:right;">
-1090
+1108
 </td>
 <td style="text-align:right;">
 18
@@ -478,7 +479,7 @@ camelid bone
 16/92
 </td>
 <td style="text-align:right;">
-1085
+1120
 </td>
 <td style="text-align:right;">
 30
@@ -495,7 +496,7 @@ human bone
 16/92
 </td>
 <td style="text-align:right;">
-1195
+1128
 </td>
 <td style="text-align:right;">
 31
@@ -512,7 +513,7 @@ camelid bone
 17/92
 </td>
 <td style="text-align:right;">
-1018
+1078
 </td>
 <td style="text-align:right;">
 28
@@ -529,7 +530,7 @@ charcoal
 17/92
 </td>
 <td style="text-align:right;">
-1101
+1097
 </td>
 <td style="text-align:right;">
 34
@@ -546,7 +547,7 @@ cane
 18/92
 </td>
 <td style="text-align:right;">
-1165
+1187
 </td>
 <td style="text-align:right;">
 26
@@ -563,7 +564,7 @@ charcoal
 19/92
 </td>
 <td style="text-align:right;">
-1079
+1129
 </td>
 <td style="text-align:right;">
 23
@@ -580,7 +581,7 @@ charcoal
 20/92
 </td>
 <td style="text-align:right;">
-1238
+1259
 </td>
 <td style="text-align:right;">
 32
@@ -588,7 +589,6 @@ charcoal
 </tr>
 </tbody>
 </table>
-<p>apply: chronometric hygiene, phase model, boundaries, offsets generate: KDE, span right answers don’t matter!</p>
 </div>
             </section>
 
