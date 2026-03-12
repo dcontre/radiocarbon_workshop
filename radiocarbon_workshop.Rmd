@@ -800,7 +800,7 @@ If you look at the results of the 'Interval' query in the 'Table' window, you'll
 
 How good are our results? Well, if we take the medians of the boundaries (not ideal for describing the bimodal distribution of the end boundary, but efficient), we'd say that our phase began around 900 CE and lasted until about 1180 CE. The end might come with a caveat: there's a good chance that it's about 90 years earlier; we can tell from the KDE that really there are only one or two dates that are pushing our end date forward. Knowing as we do that our initial dated events were sampled from a uniform distribution extending from 800-1100 CE, we can tell that we are victims of some bad luck in our sampling. We haven't sampled any early burials, and we got one late date that seems to be the result of a radiocarbon age intersecting a wide calibrated range (see Figure 5.26; these are likely LabXX-02 and LabXX-04). The problem, of course, that if we weren't working from simulated data, we'd have no way to know that our results were inaccurate - a good illustration of the kinds of uncertainties that are difficult to escape in any chronological model.
 
-####Simulating radiocarbon samples in OxCal
+#### Simulating radiocarbon samples in OxCal
 
 If you want to explore these uncertainties further, you can re-run this example with different simulated dates. The `R_Simulate` command in OxCal randomly generates a radiocarbon age that *might result* from a given calendar age. You can use 'Insert'-->'R_Simulate' or edit code directly to produce generate multiple radiocarbon dates from the same calendar date, for example.  
 

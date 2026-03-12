@@ -1104,7 +1104,7 @@ Figure 5.25: Plotting multiple dates.
 </div>
 <div id="visual-inspection-of-calibrated-14c-determinations." class="section level4 hasAnchor" number="5.4.5.2">
 <h4><span class="header-section-number">5.4.5.2</span> Visual inspection of calibrated <span class="math inline">\(^{14}C\)</span> determinations.<a href="cemetery.html#visual-inspection-of-calibrated-14c-determinations." class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<p>As Bayliss and colleagues <span class="citation">(2007, 8–9)</span> discuss in detail, visual inspection of assemblages of radiocarbon dates almost inevitably leads to overestimation of the spans of time that produced those assemblages. If we take the maximum and minimum of the 95% HDRs, we get 693 - 1265. A similar but less precise estimate - the one most archaeologists would probably give - based on visual inspection of the calibrated ranges would likely be something like, “about 850 CE to a bit after 1200 CE”.</p>
+<p>As Bayliss and colleagues <span class="citation">(2007, 8–9)</span> discuss in detail, visual inspection of assemblages of radiocarbon dates almost inevitably leads to overestimation of the spans of time that produced those assemblages. If we take the maximum and minimum of the 95% HDRs, we get 685 - 1212. A similar but less precise estimate - the one most archaeologists would probably give - based on visual inspection of the calibrated ranges would likely be something like, “about 850 CE to a bit after 1200 CE”.</p>
 <p><span style="color: red;">But in fact our simulated <span class="math inline">\(^{14}C\)</span> ages are from samples drawn from a uniform distribution covering the interval <strong>800 - 1100 CE</strong>.</span></p>
 <div class="figure"><span style="display:block;" id="fig:unnamed-chunk-37"></span>
 <img src="radiocarbon_workshop_files/figure-html/unnamed-chunk-37-1.png" alt="Calendar dates and simulated radiocarbon dates." width="672" />
@@ -1234,7 +1234,9 @@ Figure 5.28: KDE and boundaries.
 </div>
 <p>If you look at the results of the ‘Interval’ query in the ‘Table’ window, you’ll find that the 95% confidence interval is 113-381 years, with a median of 276 years. That is a corollary of the boundaries, and the phase model’s answer to our question of how long the cemetery was in use. It varies quite a bit for two reasons: we don’t have a huge number of samples, and we have no information with which to constrain the initial and terminal dates (no dated events that predate and postdate cemetery use). If we could add those, our estimate would get more precise.</p>
 <p>How good are our results? Well, if we take the medians of the boundaries (not ideal for describing the bimodal distribution of the end boundary, but efficient), we’d say that our phase began around 900 CE and lasted until about 1180 CE. The end might come with a caveat: there’s a good chance that it’s about 90 years earlier; we can tell from the KDE that really there are only one or two dates that are pushing our end date forward. Knowing as we do that our initial dated events were sampled from a uniform distribution extending from 800-1100 CE, we can tell that we are victims of some bad luck in our sampling. We haven’t sampled any early burials, and we got one late date that seems to be the result of a radiocarbon age intersecting a wide calibrated range (see Figure 5.26; these are likely LabXX-02 and LabXX-04). The problem, of course, that if we weren’t working from simulated data, we’d have no way to know that our results were inaccurate - a good illustration of the kinds of uncertainties that are difficult to escape in any chronological model.</p>
-<p>####Simulating radiocarbon samples in OxCal</p>
+</div>
+<div id="simulating-radiocarbon-samples-in-oxcal" class="section level4 hasAnchor" number="5.4.5.4">
+<h4><span class="header-section-number">5.4.5.4</span> Simulating radiocarbon samples in OxCal<a href="cemetery.html#simulating-radiocarbon-samples-in-oxcal" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>If you want to explore these uncertainties further, you can re-run this example with different simulated dates. The <code>R_Simulate</code> command in OxCal randomly generates a radiocarbon age that <em>might result</em> from a given calendar age. You can use ‘Insert’–&gt;‘R_Simulate’ or edit code directly to produce generate multiple radiocarbon dates from the same calendar date, for example.</p>
 <div class="sourceCode" id="cb6"><pre class="sourceCode js"><code class="sourceCode javascript"><span id="cb6-1"><a href="cemetery.html#cb6-1" tabindex="-1"></a> <span class="fu">Plot</span>()</span>
 <span id="cb6-2"><a href="cemetery.html#cb6-2" tabindex="-1"></a> {</span>
@@ -1452,7 +1454,7 @@ LabXX-101
 gourd
 </td>
 <td style="text-align:right;">
-1008
+1084
 </td>
 <td style="text-align:right;">
 30
@@ -1469,7 +1471,7 @@ LabXX-102
 textile
 </td>
 <td style="text-align:right;">
-968
+1035
 </td>
 <td style="text-align:right;">
 37
@@ -1486,7 +1488,7 @@ LabXX-103
 wood
 </td>
 <td style="text-align:right;">
-1118
+1131
 </td>
 <td style="text-align:right;">
 35
@@ -1503,7 +1505,7 @@ LabXX-104
 human bone
 </td>
 <td style="text-align:right;">
-1040
+1052
 </td>
 <td style="text-align:right;">
 34
@@ -1520,7 +1522,7 @@ LabXX-105
 human bone
 </td>
 <td style="text-align:right;">
-1025
+1027
 </td>
 <td style="text-align:right;">
 32
@@ -1537,7 +1539,7 @@ LabXX-106
 human bone
 </td>
 <td style="text-align:right;">
-1045
+1003
 </td>
 <td style="text-align:right;">
 35
@@ -1554,7 +1556,7 @@ LabXX-107
 camelid bone
 </td>
 <td style="text-align:right;">
-1013
+1023
 </td>
 <td style="text-align:right;">
 26
@@ -1571,7 +1573,7 @@ LabXX-108
 cane
 </td>
 <td style="text-align:right;">
-1102
+1073
 </td>
 <td style="text-align:right;">
 31
@@ -1588,7 +1590,7 @@ LabXX-109
 cane
 </td>
 <td style="text-align:right;">
-1066
+1025
 </td>
 <td style="text-align:right;">
 29
@@ -1605,7 +1607,7 @@ LabXX-110
 charcoal
 </td>
 <td style="text-align:right;">
-1209
+1206
 </td>
 <td style="text-align:right;">
 40
@@ -1622,7 +1624,7 @@ LabXX-111
 charcoal
 </td>
 <td style="text-align:right;">
-1113
+1111
 </td>
 <td style="text-align:right;">
 39
@@ -1639,7 +1641,7 @@ LabXX-112
 charcoal
 </td>
 <td style="text-align:right;">
-1059
+1083
 </td>
 <td style="text-align:right;">
 32
@@ -1655,18 +1657,18 @@ charcoal
 ##   Boundary(&quot;&quot;);
 ##   Phase(&quot;11/92&quot;)
 ##   {
-##    R_Date(&quot;LabXX-101&quot;, 1008, 30);
-##    R_Date(&quot;LabXX-102&quot;, 968, 37);
-##    R_Date(&quot;LabXX-103&quot;, 1118, 35);
-##    R_Date(&quot;LabXX-104&quot;, 1040, 34);
-##    R_Date(&quot;LabXX-105&quot;, 1025, 32);
-##    R_Date(&quot;LabXX-106&quot;, 1045, 35);
-##    R_Date(&quot;LabXX-107&quot;, 1013, 26);
-##    R_Date(&quot;LabXX-108&quot;, 1102, 31);
-##    R_Date(&quot;LabXX-109&quot;, 1066, 29);
-##    R_Date(&quot;LabXX-110&quot;, 1209, 40);
-##    R_Date(&quot;LabXX-111&quot;, 1113, 39);
-##    R_Date(&quot;LabXX-112&quot;, 1059, 32);
+##    R_Date(&quot;LabXX-101&quot;, 1084, 30);
+##    R_Date(&quot;LabXX-102&quot;, 1035, 37);
+##    R_Date(&quot;LabXX-103&quot;, 1131, 35);
+##    R_Date(&quot;LabXX-104&quot;, 1052, 34);
+##    R_Date(&quot;LabXX-105&quot;, 1027, 32);
+##    R_Date(&quot;LabXX-106&quot;, 1003, 35);
+##    R_Date(&quot;LabXX-107&quot;, 1023, 26);
+##    R_Date(&quot;LabXX-108&quot;, 1073, 31);
+##    R_Date(&quot;LabXX-109&quot;, 1025, 29);
+##    R_Date(&quot;LabXX-110&quot;, 1206, 40);
+##    R_Date(&quot;LabXX-111&quot;, 1111, 39);
+##    R_Date(&quot;LabXX-112&quot;, 1083, 32);
 ##   };
 ##   Boundary(&quot;&quot;);
 ##  };</code></pre>
