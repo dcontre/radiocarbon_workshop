@@ -1196,11 +1196,6 @@ The potential of Bayesian modeling to produce more precise age estimates from ra
 
 A more immediate advantage is that Bayesian modeling forces us to explicitly articulate our assumptions. It also highlights the importance of clear questions, clearly and thoroughly understood samples, and explicit articulation/consideration/justification of prior beliefs. The latter emphasizes a conceptual key to interpretation of model results: model consistency (measured with OxCal's agreement ['A'] index) is most useful as a tool for confronting prior beliefs with data, and/or for exploring how consistent data are. Model consistency can also be a useful indicator of inconsistencies between priors, but consistencies among priors cannot indicate anything beyond coherence.
 
-# Working with $^{14}C$ data in R
-
-## Getting data out of OxCal
-
-
 # Exercise 1
 
 To generate a basis for discussion for our second session, please explore this set (Table 6.1, and available in ['BurialSim2_sim.csv'](https://dcontre.github.io/radiocarbon_workshop/data/BurialSim2_sim.csv)) of radiocarbon ages on 20 samples from 10 burials (thinking about the same cemetery that we explored above). Estimate the span of use of the cemetery. Assume a terrestrial diet for all individuals. Drop dates that you don't trust - but justify excluding them. 
@@ -1317,7 +1312,7 @@ as above, but normal distribution (i.e. sigma boundary?)? And various types of s
 # Exercise 3 
 
 
-### A fictional long barrow dated with antlers
+## A fictional long barrow dated with antlers
 
 Bayliss and colleagues ([@bayliss2007, 7-15](https://doi.org/10.1017/S0959774307000145)) use a set of 28 simulated radiocarbon dates from specified calendar ages, representing a “known” history of construction and use for a fictionalized long barrow (based, Bayliss and colleagues note, “on a simplified version of the chronological model for Hazleton North long cairn presented in [@Meadows_Barclay_Bayliss_2007](https://doi.org/10.1017/S0959774307000169)”). These are presented in here (Table 1) and in the accompanying .xlsx file ([Bayliss_2007_Table1.xlsx](data/Bayliss_2007_Table1.xlsx); below we will revisit some of the modeling that Bayliss and colleagues use to demonstrate the challenges of reconstructing this known long barrow history. That known history is as follows: “The actual dates of the antlers used in the construction of the cairn range from 3695 bc to 3691 bc, the construction of the cairn was completed in 3690 bc, the passage to the north chamber collapsed between 3645 bc and 3640 bc, and the last interment occurred in 3630 bc. Burial occurred continuously for 60 years, between 3690 bc and 3630 bc and all the dated events cover only 65 years.” ([@bayliss2007, 7](https://doi.org/10.1017/S0959774307000145))
 
